@@ -1,0 +1,25 @@
+02_문서.txt
+
+1.클래스 기초
+===============================
+package 패키지 이름;
+import java.awt.*;
+import java.awt.event.*;
+class 클래스이름 extends 슈퍼클래스 implements 인터페이스{
+
+}
+public class 클래스 이름{ //main이 소속해 있는 주 클래스 이름이 저장이름이 된다 
+	public static void main (String[] args){
+		
+	}
+}
+
+===============================
+클래스 상속 
+이미 만들어진 클래스를 상속받아서 쓸 수 있다 
+class 클래스이름 extends 슈퍼클래스{}
+class 클래스이름 implements 인터페이스,인터페이스2,인터페이스3{} //인터페이스는 다중상속 가능
+interface 인터페이스 이름 extends 인터페이스
+
+upcasting
+상위클래스 변수로 하위 객체 처리하는 것

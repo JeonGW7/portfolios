@@ -1,0 +1,10 @@
+package ch15_io;
+
+public class Test07_ByteR {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

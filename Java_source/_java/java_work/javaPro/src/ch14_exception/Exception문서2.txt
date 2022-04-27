@@ -1,0 +1,19 @@
+Exception문서2.txt
+
+throw : 예외 생성 
+ex)-(throw new Test();)
+throws : 예외가 발생하면 메서드를 호출한 그곳으로 제어권을 넘긴다
+=================================================
+class ExceptionTest{
+	if(MyException 발생 조건){
+		throw new MyException("메시지");
+	}
+} 
+=================================================
+class MyException extends Exception{
+	//생성자
+	public MyException(String msg){
+		super(msg);
+	}
+}
+=================================================

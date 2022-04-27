@@ -1,0 +1,30 @@
+interface.txt
+1.인터페이스의 메서드는 모두 추상메서드이다
+예: public void disp(); 
+2.인터페이스 메서드 접근제한자 : 항상 public이다 (생략해도 public이다)
+3.인터페이스 변수는 항상 static final이다(생략해도 static final이다)
+  static final 변수는 값변경 불가능하다 
+4. 인터페이스는 다중 상속 된다
+     클래스 extends 클래스
+     인터페이스 extends 인터페이스,인터페이스,인터페이스
+     클래스 implements 인터페이스,인터페이스,인터페이스 
+5.인터페이스 정의 형식
+   interface 인터페이스 이름{
+   	static final 자료형 변수=값;
+   	public 리턴형 메서드이름();
+   	public 리턴형 메서드이름();
+   	public 리턴형 메서드이름();
+   	리턴형 메서드이름();//public 생략해도 public 된다 
+   }
+   
+6.인터페이스는 클래스에서 상속받아서 오버라이딩하여 사용한다 
+예: 
+class 클래스이름 implements 인터페이스이름{
+	public 리턴형 메서드이름(){내용;}
+	public 리턴형 메서드이름(){내용;}
+	public 리턴형 메서드이름(){내용;}
+}
+
+BoardDTO.java
+BoardDAO.java           인터페이스(메뉴판에 비유할 수 있다)
+BoardDTOImp1.java       인터페이스를 상속받아서 구현한 클래스 (구현클래스)

@@ -1,0 +1,13 @@
+Layout_문서.txt
+
+LayoutManager : 컴포넌트 배치 관리자 
+
+Layout종류
+1. FlowLayout : Panel 계열에 디폴트
+2. BoarderLayout : Window계열의 디폴트
+   상(North)하(South)좌(West)우(East) 가운데(Center)
+3. GridLayout : 컴포넌트를 격자 모양으로 표시
+ 
+4. GridBagLayout : 컴포넌트를 다양한 크기로 배치 
+5. CardLayout : 카드식으로 컴포넌트를 배치 X
+6. Layout을 null로 하고, 프로그래머가 직접 디자인 한다

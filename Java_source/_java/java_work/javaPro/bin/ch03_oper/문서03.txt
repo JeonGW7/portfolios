@@ -1,0 +1,16 @@
+문서03.txt
+
+4. shift연산 : 비트연산
+<<  좌 shift : 1bit 씩 왼쪽으로 이동, 오른쪽은 0으로 채운다 ( X*2ⁿ)
+>>  우 shift : 1bit 씩 오른쪽으로 이동, 왼쪽은 부호(sign)로 채운다(X/2ⁿ)
+
+>>> 한 bit씩 오른쪽으로 이동, 왼쪽은 0으로 채운다 (X/4ⁿ)
+
+short a=10;//2byte
+0000 0000 0000 1010   Test03.java
+
+5. boolean 연산자
+   boolean b=true;
+   b=!b;//false
+   b=!!b;//true  Test03.java
+   

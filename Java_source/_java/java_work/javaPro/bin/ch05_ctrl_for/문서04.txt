@@ -1,0 +1,27 @@
+문서04.txt
+
+- while문은 최종치를 알수 없을때 사용한다 
+- for문은 최종치을 알고 있을때 사용한다 
+
+■ while문 형식
+
+while(조건){
+  조건이 참일때 처리 
+}
+
+Test11_while.java
+
+초기치;
+while(조건){
+  조건이 참일때 처리
+  증감치; 
+}
+
+■ do~while 형식
+
+do{
+  반복 처리문;
+}while(조건);
+
+Test13_do_while.java
+

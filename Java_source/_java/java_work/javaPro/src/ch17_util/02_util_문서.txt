@@ -1,0 +1,57 @@
+02_util_문서.txt
+1. Generic(제너릭) 
+제너릭기능은 Collection(Vector,List,Map..등등)같은 자료구조에
+객체를 넣거나 꺼낼때 형변환이 잘못되면 ClassCastException예외를 *컴파일*시에 찾아내기 위한 기능 
+
+컴파일시 에러
+실행 시 에러 
+
+제너릭 사용 예
+Vector <String>vec = new Vector<String>();  -> String대신 다른것을 넣을시 에러가 발생
+Vector <BoardDTO>vec = new Vector<BoardDTO>(); 
+
+2. 단축 for = Enhanced Loop = 향상된 for문 
+단축for문은 Collection이나 배열같은 군집 데이터 처리 할 때 사용한다
+ 
+형식==================================
+
+for(파라미터 : 변수명(콜렉션 자료 변수명)){
+	반복처리내용; 
+}
+
+=====================================
+
+3. AutoBoxing/UnBoxing 
+AutoBoxing : stack영역에서 heap영역으로 저장 
+UnBoxing : heap영역에서 stack영역으로 저장 
+int a = 10; //stack 영역에 저장 
+Integer A = a; //heap 영역에 저장 (AutoBoxing)
+
+Integer B = new Integer(100); //heap영역에 저장
+int b = B; //stack영역에 저장  (UnBoxing) 
+
+4. 향상된 입출력 
+향상된 입력 기능: java.util.Scanner 
+향상된 출력 기능: System.out.printf("%d %f %s",27,178.6,"kim");
+향상된 출력 기능: System.out.printf("%5d %6.1f %8s",27,178.6,"kim");
+
+5. 컬렉션 자료들
+ 
+  Iterator는 모든 Collection자료들을 받아서 처리 할 수 있다 
+  Collection 자료들
+  Hashtable,Vector : 스레드 기능이 있다 (동기화를 지원한다)
+  Set,HashSet : 중복 데이터 허용 안된다(로또,,, 부서)
+  List,ArrayList : 중복 허용 된다 , 스레드 기능 없다 (cf: Vector)
+  Map,HashMap : 스레드 기능 없다(cf: Hashtable)
+  
+  *Collection 주요 메서드*
+  int size() : 요소 갯수 리턴
+  
+  Vector,List,ArrayList
+  add() : 요소 추가
+  get() : 요소값 얻을때 
+  
+  Hashtable,Map,HashMap
+  put() : 요소 추가
+  get() : 요소값 얻을 때 
+	  

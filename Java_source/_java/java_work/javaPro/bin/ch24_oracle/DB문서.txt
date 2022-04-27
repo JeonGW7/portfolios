@@ -1,0 +1,34 @@
+DB문서.txt
+오라클 드라이버를 검색하여
+ojdbc6.jar
+자바경로/jre/lib/ext/ 에 넣기 
+
+C:\>sqlplus user/pwd
+C:\>sqlplus scott/tiger
+
+num,title,name,content,wdate
+
+자바에서 오라클 사용 예제1
+오라클 board 테이블 작성 
+create table board(
+	num number(4) not null primary key,
+	title varchar2(30) not null,
+	name varchar(20) not null,
+	content varchar2(4000) not null,
+	wdate date
+);
+
+일련번호 넣는 sequence 작성 
+drop sequence 시퀀스이름;
+create sequence 
+create sequence board_seq;  #글번호 넣으려고 
+======================================
+
+자바에서 오라클 사용 예제2
+
+create table test2(
+	id varchar2(20) not null,
+	pw varchar2(12) not null,
+	name varchar2(30) not null,
+	addr varchar2(50) not null
+);

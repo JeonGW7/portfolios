@@ -1,0 +1,6 @@
+문서.txt
+
+MySql 드라이버를 자바경로 (JDK)/jre/lib/ext/ 에 넣어야한다
+mysql-connector-java-5.0.8-bin.jar
+
+이클립스 

@@ -1,0 +1,68 @@
+Exception문서1.txt
+
+예외(Exception)란?
+프로그램을 실행하는 동안 예기치 않은 이상 상태(예외 상황)가 발생하는 것을 말한다
+ 
+에러란?
+프로그램 언어의 문법적인 오류 
+
+예외는 프로그램이 실행되는 동안 문제가 발생 했을 때 대처할 수 있는 것이 예외이다 
+
+예외로 에러이다 
+
+Exception이란 >
+사전에 프로그래머가 예상해서 처리(I/O,DB)할 수 있는 가벼운 에러로 
+예외 종류는 클래스 계층 구조로 되었다
+
+Object
+ |
+Throwable
+ |
+Exception
+
+컴파일 exception : 고칠 수 없는 에러
+ IOException
+ FileNotFoundException
+ ClassNotFoundException : DB에 사용 
+ 등등
+
+런타임 exception : 고칠 수 있는 에러
+ ArrayIndexOutofBoundsException : 배열 예외 
+ NumberFormatException : 숫자가 아닐때 예외 발생
+ ArithmeticException : 연산 예외
+ 
+ *
+ 예외처리방법 2가지
+ 1) 직접 처리
+ ------------------------------------------------------------------------
+ try{
+  처리;
+  처리;
+ }catch(예외종류 ex{}
+ catch(예외종류 ex2{}
+ catch(예외종류 ex3{}
+ finally{
+ //finally절은 예외 발생과 상관없이 처리된다 
+ //심지어 finally절 앞에 return문이 있어도 finally절은 실행된다 
+ //그러나 finally절 앞에 System.exit(0); 종료문이 있으면 finally절을 처리하지 않는다 
+ //rs.close();
+ //stmt.close();
+ //conn.close();
+ }//finally-end
+ ------------------------------------------------------------------------
+ 2) 간접 처리
+ 접근제한자 리턴형 메서드(인수,,,) throws 예외종류 {
+ 
+ }
+ 이 경우 예외 발생하면 메서드를 호출했던 그 곳으로 제어권을 넘긴다 
+ 
+ ------------------------------------------------------------------------
+ main메서드 경우는 
+ public static void main(String args[]) throws Exception{
+ 	//main에서 예외가 발생하면 JVM으로 제어권이 넘어간다 
+ } 
+ 
+ 
+ 
+ 
+ 

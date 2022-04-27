@@ -1,0 +1,16 @@
+문서05.txt
+
+1. 3항 연산자(조건 연산자)
+ 
+  (조건)?값1:값2
+   조건이 참이면 값1을 처리하고
+   조건이 거짓이면 값2을 처리한다
+   
+   Test05.java 
+   
+2. cast연산자(형변환)
+   int c = (int)88.7;//double형을 int형으로 casting 한다
+   char d = (char)65;// 'A'
+   char e = (char)66.7;// 'B'   
+   
+   Test05.java 

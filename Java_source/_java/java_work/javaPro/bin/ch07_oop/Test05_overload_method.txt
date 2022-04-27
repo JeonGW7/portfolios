@@ -1,0 +1,23 @@
+Overload : 오버로드 : 메서드 중복
+
+1. 하나의 클래스 안에 이름이 같은 메서드가 여러개 있는 경우를 말한다
+
+2. 메서드 구분은 매개변수로 한다. 인수자료형이 다르거나, 인수갯수가 다르면 된다
+
+3. 리턴형은 같거나 달라도 상관이 없다 
+
+오버로드 - 매개변수 자료형이 다르다 
+static double	abs(double a)
+static float	abs(float a)
+static int	           abs(int a)
+static long	abs(long a)
+
+static double	max(double a, double b)
+static float	max(float a, float b)
+static int	           max(int a, int b)
+static long	max(long a, long b)
+
+static double	min(double a, double b)
+static float	min(float a, float b)
+static int	           min(int a, int b)
+static long	min(long a, long b)

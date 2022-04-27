@@ -1,0 +1,125 @@
+문서01.txt
+
+OOP (Object Oriented Programming) : 객체 지향 프로그래밍
+
+1. 객체지향 개념
+2. 메서드, 메서드 오버로드(OverLoad), 변수 유효범위
+3. 생성자, 생성자 중복(OverLoad)
+4. this, this()X, superX, super()
+
+
+5. 클래스, 클래스 상속
+6  상위클래스 변수로 하위 객체 처리
+    List<String> list=new ArrayList<Stirng>();
+    
+7. 인터페이스, 인터페이스 상속
+8. 추상 클래스: 추상 메서드,일반메서드
+
+===================== 
+   Object, String, Frame : 컴포넌트=클래스 자료형 이다
+      컴포넌트 : Button,TextField,Label,자바빈즈(JSP에서 사용)
+   
+1. 객체지향 개념
+   
+   예  Test.java ( 자료설계)
+    Test.class ( 레퍼런스 자료형 )
+    
+    Test t=new Test();//객체생성,  t(객체), 객체는 클래스 변수, 인스턴스
+    
+    int a;//일반 변수
+    Test t;//클래스 변수
+    
+    t.aa();//객체.메서드();
+  
+  ☞ 클래스 = 모듈 = 단위프로그램 = 캡슐화
+     클래스는 작은단위 프로그램
+     클래스는 자료형이다.(레퍼런스 자료형)
+  
+  
+2. 객체지향 4대 특성 
+  1) 캡슐화(클래스 묶음), 은익화(private선언된 변수,메서드)
+     class Test{}
+     
+  2) 상속 : class Test extends Frame implements WindowListener  { }
+  
+  3) 다형성 : 오버로드, 오버라이딩
+  
+  4) 추상화 : 복잡한것을 단순화
+                      클래스 설계자 입장 : 복잡한 것
+                      클래스 사용자 입장 : 단순화  
+                      냉장고 만들기/냉장고 사용    
+  
+ 예를 들어 
+ class Test extends Object{
+   private String name;//은익화 , 외부에서 사용 못함
+   public 리턴형 메서드(){}
+ }
+  
+ ☞ 다형성(Polymorphism)이란 : 오버로드, 오버라이딩 
+  -프로그램에서 하나의 형태로 여러가지 작업을 하는것이 다형성의 뜻이다
+  -의미(semantics)는 하나지만, 실제 형태는 여러 가지가 될 수 있다는 뜻이다
+  
+  -메서드 오버로드,오버라이딩 이다
+  
+    예를 들어
+     점심을 먹는다(){라면을 먹고} 
+     점심을 먹는다(){떡볶기를 먹고} 
+     점심을 먹는다(){쭈꾸미 볶음밥} 
+  
+    강남을 간다(){버스 타고}
+    강남을 간다(){전철 타고}
+    강남을 간다(){승용차 타고}
+    
+  ■ 다형성은  객체지향 프로그래밍 언어에서
+   "오버로딩 (overloading)", 
+   "오버라이딩 (overriding)"의 형태로 나타낸다.
+   
+  ■ 오버로드 : Math클래스의 메서드 참조
+       -오버로드는 하나의 클래스 내에서 이름이 같은 메서드가 여러개인 것을 말한다
+       -구분은 매개변수=인수로한다. 매개변수 갯수가 다르거나 자료형 달라야 한다
+       -리턴형은 같아도 달라도 상관 없다 .
+       
+    Math
+       abs(double a)
+       abs(float a)
+       abs(int a)
+       abs(long a)
+       
+       max(double a, double b)
+       max(float a, float b)
+       max(int a, int b)
+       max(long a, long b)
+       
+       min(double a, double b)
+       min(float a, float b)
+       min(int a, int b)
+       min(long a, long b)
+       	
+  ■ 오버라이딩 
+  - 상속 받은 메서드 내용 재정의
+  - 리턴형, 인수갯수, 인수 자료형은 반드시 일치해야 한다 
+  - 접근 제한자 상위와 같거나, 더 넓은 개념으로 사용하면 된다
+  
+        상위 접근 제한자  : protected
+        상속받은 메서드는 : public 
+       
+  ■ 접근 제한자
+    private : 자신의 클래스 안에서만 접근 가능하다
+       생략          : 같은 package내에서는 접근 가능하다
+    protected : 패키지가 달라도 상속받으면 접근 가능하다
+    public    : 어디서나 사용 가능하다 (공용택시~~~)
+    
+    //메서드
+    private void aa(){}
+    void aa(){}
+    protected void aa(){}
+    public void aa(){}//메서드는 public으로 많아 사용
+    
+    //전역변수
+    private String name;//변수는 private으로 많이 사용, 은익화
+    String name;
+    protected String name;
+    public String name;
+    
+    
+  

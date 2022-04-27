@@ -1,0 +1,101 @@
+01_util_문서.txt
+
+1. WrapperClass = 랩퍼 클래스 : 기본자료형의 클래스를 랩퍼 클래스라고 한다
+기본자료형			랩퍼클래스
+byte			Byte
+char			Character
+short			Short
+
+int				Integer
+long			Long
+float			Float
+ 
+double			Double
+boolean			Boolean 
+
+2. HashTable
+해쉬테이블은 검색이 빠르다(검색이 용이하다)
+해쉬테이블은 스레드 기능이 있다(장바구니에 사용)
+---------------------------------
+	key 			value
+---------------------------------
+	"id"			"kim"
+	"pw"			"k12345"
+	"name"			"김길동"
+---------------------------------
+put(Object key,Object value) : 해쉬테이블에 저장 
+get(Object key) : key에 해당하는 값을 얻는다
+int size(): 해쉬테이블의 key갯수를 리턴한다 
+3. Calendar : 달력 만들때 사용
+3. Date : 날짜 표시할 때 사용 
+4. String : 문자열 처리
+   StringBuffer : 동적 문자열 처리(속도 빠르다)  
+ ---------------------------------------    
+생성자 들(오버로드)
+StringBuffer( )  : 디폴트 생성자 
+StringBuffer(int size) : size를 기본크기로 지정 
+StringBuffer(String str) : str 초기문자열 지정
+
+
+메서드 들 
+----------------------------------
+StringBuffer append(boolean b) : 현재 문자열 끝에 b를 추가 
+StringBuffer append(char ch) : 현재문자열 끝에 ch를 추가 
+StringBuffer append(int i) : 현재 문자열 끝에 i 를 추가
+StringBuffer append(long l) : 현재문자열 끝에 l 를 추가 
+StringBuffer append(float f) :현재문자열 끝에 f 를 추가 
+StringBuffer append(double d) :현재문자열 끝에 d 를 추가 
+StringBuffer append(String str) :현재문자열 끝에 str문자열을 추가 
+StringBuffer append(Object obj) : 현재문자열 끝에 obj 를 추가 
+
+int capacity() : 현재 문자열의 버퍼크기를 반환 
+
+char charAt(int index) :  index 위치에 해당 문자 반환 
+                          198812-1055910 
+
+int length()메서드 : 문자의 갯수를 반환    (참고:배열.length)
+
+StringBuffer insert(int i ,boolean b) : i번 인덱스 앞에 b를 추가
+StringBuffer insert(int i, char ch); i번 인덱스 앞에ch 를 추가
+StringBuffer insert(int i, int j) : i번 인덱스 앞에 j를 추가
+StringBuffer insert(int i, long l) :i번 인덱스 앞에 l를 추가
+StringBuffer insert(int i, String str) :i번 인덱스 앞에 str 문자열을 추가
+StringBuffer insert(int i,Object obj) : i번 인덱스 앞에 obj를 추가
+-------------------------------------------------------------
+StringBuffer 처리속도가 빠르기 때문에 StringBuffer로 처리하고 
+리턴할 때 toString()메서드로 String변환후 리턴한다
+
+
+5. Vector : 객체를 넣는 자료형이다 
+생성자, 생성자 오버로드 
+Vector() - default생성자 
+Vector(int initialCapacity) : 백터크기 지정하는 생성자
+Vector(int initialCapacity,int capacityIncrement) : 백터크기와 백터증가치 지정 
+메서드
+add() : 백터에 데이터 넣을 때 사용
+get() : 백터로부터 데이터를 꺼낼때 사용
+size() : 데이터 갯수
+remove() : 데이터 삭제 
+
+6. StringTokenizer : 채팅할 때 사용
+ StringTokenizer : 문자열 파싱 하는 기능이 있다
+  
+ 메서드
+ nextToken() : 파싱된 문자열을 차례로 반환(리턴)해준다
+ hasMoreTokens() : nextToken()한 뒤에 Token이 남아 있는지 여부 확인 
+ countTokens() : 토큰 갯수 리턴
+ Spring에서 split()이라는 문자열 파싱 메서드가 있다  
+
+7. Properties : 스프링에서 DB연결 할 때 사용
+property = 속성 = 변수
+Properties - 말 그대로 속성을 모아서 하나의 객체로 만들기 위해 제공되는 클래스이다 
+이러한 클래스가 필요한 이유
+: 프로그램이 시작되기 전에 여러개의 속성들 중 원하는 속성들을 미리 인식하게 하여 전반적인 실행환경을 좀 더 신속하게 하기 위한 것 
+DB연결할때 사용(스프링이나 스프링 부트에서 사용)
+DRIVER=
+URL=
+USER=
+PWD= 
+메서드
+put(key,value) : 값을 넣을때 사용
+getProperty(key) : 값을 얻을때 사용

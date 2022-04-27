@@ -1,0 +1,24 @@
+문서02.txt
+
+■ switch~case문
+
+형식
+
+switch(변수 또는 수식){
+  case 값1:
+	    처리문;
+	    처리문;
+	  break;//switch블럭을 탈출
+  case 값2:
+	    처리문;
+	    처리문;
+	  break;//switch블럭을 탈출
+  case 값3:
+	    처리문;
+	    처리문;
+	  break;//switch블럭을 탈출
+  default:
+          위의 조건에 해당 사항이 없을 처리할 내용;
+}
+
+Test04_switch.java
