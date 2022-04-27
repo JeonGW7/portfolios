@@ -1,0 +1,34 @@
+02_문서.txt
+파일업로드 하려면
+1. MultipartRequest 클래스를 사용한다
+2. 생성자
+   MultipartRequest(request,dir(savepath))
+   MultipartRequest(request,dir(savepath),size,"UTF-8",new DefaultFileRenamePolicy())
+   
+   request : 요청객체
+   dir(savepath) : 업로드 될 위치 c:\_upload
+   size : 업로드될 파일 사이즈(size는 1024*1024*5=>5MB)
+   "UTF-8" : 업로드될 파일이름 인코딩
+   new DefaultFileRenamePolicy() : 파일중복처리,동일한 이름으로 파일이 업로드 되면 자동으로 rename해주는 기능
+
+3. MultipartRequest 생성자가 업로드된 파일 저장 작업까지 한다
+4. MultipartRequest 클래스 메서드
+	1)String getContentType(String name): 전송된 파일의 contentType 알아보기
+	2)File getFile(String name) : input항목이름에 해당하는 파일정보를 File형으로 리턴한다
+	3)String getFilesystemName(String name) : 업로드된 실제 파일이름 알아내기
+	4)String getOriginalFileName(String name) : 업로드된 원래파일 이름 알아내기 
+	5)Enumeration getFileNames() : 전송된 파일정보를 가져와 출력한다
+	6)Enumeration getParameterNames() : form안의 파라미터 name을 모두 받는다
+	7)String getParameter("name") : name에 해당하는 값을 받는다
+
+	
+==========================
+실습1
+src/upload.FileUploadBean.java
+WebContent/ch12_upload
+fileupload.html
+fileupload.jsp
+
+실습2
+fileupload2.html
+fileupload2.jsp

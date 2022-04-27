@@ -1,0 +1,6 @@
+Object selectOne(String statement, Object parameter) 
+List selectList(String statement, Object parameter)
+Map selectMap(String statement, Object parameter, String mapKey) 
+int insert(String statement, Object parameter)
+int update(String statement, Object parameter) 
+int delete(String statement, Object parameter)

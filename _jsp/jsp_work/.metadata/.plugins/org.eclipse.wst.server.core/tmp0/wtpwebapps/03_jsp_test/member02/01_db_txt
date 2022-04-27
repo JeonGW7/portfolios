@@ -1,0 +1,17 @@
+01_db_txt
+
+database 이름 : testdb2
+table 이름 : member2
+필드: 
+create table member2(
+id varchar(20) primary key,
+pw varchar(20) not null,
+name varchar(30) not null,
+tel varchar(20) not null,
+addr varchar(50) not null
+);
+
+--------------------------------
+inputForm.jsp
+  jQuery로 데이터 입력 여부 체크, 힌트 넣기
+inputPro.jsp

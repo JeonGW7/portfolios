@@ -1,0 +1,26 @@
+09_외부자원_참조.txt
+
+실습-외부 자원 참조
+
+1.Config 클래스 작성
+
+2.config.property 작성
+
+3.config.xml 작성
+-PropertyPlaceholderConfigurer 타입의 propertyConfig 빈 등록
+location property에 config.property설정
+-Config 타입의 config빈 등록
+config.property값을 참조하여 property 설정
+
+4.ConfigClient.java 작성
+
+----------------------------------------
+실습
+1.Config 클래스 작성
+src/com.spring.model.Config.java
+
+2.config.property 작성
+xml/config.property
+3.config.xml 작성
+
+4.src/com.spring.client.ConfigClient.java

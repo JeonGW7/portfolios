@@ -1,0 +1,58 @@
+01_문서.txt
+
+답글게시판
+페이지,블럭처리
+검색기능 
+
+DB작업
+
+create database mydb3;
+use mydb3;
+
+drop table board; //테이블 삭제
+
+//테이블 생성
+create table board(
+num int(4) auto_increment primary key, #일련번호
+name varchar(30) not null, #글쓴이
+subject varchar(50) not null, #글제목
+content text not null, #글내용
+pos int(4), #글순서
+depth int(4), #답글 깊이
+regdate date, #등록날짜
+ip varchar(20), 
+pw varchar(20) not null,
+count int(4) default 0 #조회수
+);
+
++---------+-------------+------+-----+---------+----------------+
+| Field   | Type        | Null | Key | Default | Extra          |
++---------+-------------+------+-----+---------+----------------+
+| num     | int(4)      | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(30) | NO   |     | NULL    |                |
+| subject | varchar(50) | NO   |     | NULL    |                |
+| content | text        | NO   |     | NULL    |                |
+| pos     | int(4)      | YES  |     | NULL    |                |
+| depth   | int(4)      | YES  |     | NULL    |                |
+| regdate | date        | YES  |     | NULL    |                |
+| ip      | varchar(20) | YES  |     | NULL    |                |
+| pw      | varchar(20) | NO   |     | NULL    |                |
+| count   | int(4)      | YES  |     | 0       |                |
++---------+-------------+------+-----+---------+----------------+
+
+프로젝트
+src/boardre.BoardDTO.java	모델빈(DTO=VO)
+src/boardre.BoardDAO.java	비지니스 로직(DAO)
+ch11_board_re
+  writeForm.jsp 글쓰기 폼
+  writePro.jsp
+  list.jsp 리스트
+  content.jsp 글내용보기
+  updateForm.jsp 글수정 폼
+  updatePro.jsp 
+  delete.jsp 글삭제 
+  replyForm.jsp 답글쓰기 폼 
+  replyPro.jsp 
+  
+  
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="samm">
+  <!-- name으로 검색 -->
+  <select id="searchList" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+    select *
+    from users
+    where name=#{name}
+  </select>
+  
+  <insert id="insertSam" parameterType="HashMap">
+    insert into users(name,email)
+    values(#{name},#{email}) 
+  </insert>
+</mapper>

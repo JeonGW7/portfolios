@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test05_oper.html 논리연산자</title>
+  <script type="text/javascript">
+  function oper(){
+	  //관계연산자와 논리연산자를 함께 사용하면, 관계연산자가 우선순위가 높다 
+	  //관계연산자 > >= < <= == !
+	  //논리연산자 && || ! 
+	  var a=7;
+	  var b=5;
+	  var c=6;
+	  document.write((a>b && b>c)+"<br>");//f
+	  document.write((a>b || b>c)+"<br>");//t
+	  
+	  //boolean연산자
+	  var d=true;
+	  document.write((!d)+"<br>");//f
+	  document.write((!!d)+"<br>");//t
+  }
+  </script>
+</head>
+<body>
+  <input type="button" value="함수호출" onclick="oper()">
+</body>
+</html>

@@ -1,0 +1,51 @@
+01_문서.txt
+
+forward Action은 제어권이 넘어가서 처리 결과를 보여준다
+include Action은 제어권이 넘어가서 처리하고 결과를 포함한다
+include Action : 처리결과를 포함
+include directive : 소스를 포함 (.txt, .html, .jsp)
+그래서 include directive는 헤더 부분을 넣지 않는다 
+
+아래와 같이 되면 안된다
+<html>
+  <body>
+    <html>
+      <body>
+      </body>
+    </html>
+  </body>
+</html>
+-----------------------------------------------------------
+형식1)
+  <jsp:include page="로컬url"/>
+형식2)
+  <jsp:include page="로컬url,bb.jsp">
+    <jsp:param name="id" value="park"/>
+    <jsp:param name="name" value="박지성"/>
+    <jsp:param name="email" value="park@naver.com"/>
+  </jsp:include> 
+-----------------------------------------------------------
+include 디렉티브는 소스내용이 포함된다(헤더를 넣지마세요)
+include 디렉티브 형식
+<%@ include file=".txt .html .jsp" %>
+<%@ include file="name.txt" %>
+<%@ include file="email.txt" %>
+-----------------------------------------------------------
+실습
+01_include_action
+  includeActionTag.html
+  includeActionTag.jsp
+  includeTop.jsp
+02_include_action
+  include.html
+  include.jsp
+  top.jsp
+03_include_directive 디렉티브는 소스가 포함된다(헤더 부분을 넣지 마세요)
+  email.txt
+  name.txt
+  copyright.jsp
+  includeTest.jsp
+04_include_directive
+  top.jsp
+  bottom.jsp
+  index2.jsp

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test03_formchecker.html</title>
+  <style type="text/css">
+  table{
+  margin: auto; /*margin은 바깥 여백 auto-가운데정렬 */
+  border: 1px solid black;
+  }
+  </style>
+  <script type="text/javascript" src="test03.js"> </script>
+  <script type="text/javascript">
+  function fo(){
+	  document.myForm.name.focus();
+  }
+  </script>
+</head>
+<body onLoad="fo()">
+	<form name="myForm" method="post" action="" onSubmit="return check()">
+	  <table>
+	    <tr>
+	      <td>이름</td>
+	      <td><input type="text" name="name" id="name" size="20"></td>
+	    </tr>
+	    <tr>
+	      <td>ID</td>
+	      <td><input type="text" name="id" id="id" size="20"></td>
+	    </tr>
+	    <tr>
+	      <td>암호</td>
+	      <td><input type="password" name="pw" id="pw" size="20"></td>
+	    </tr>
+	    <tr>
+	      <td>암호확인</td>
+	      <td><input type="password" name="pw2" id="pw2" size="20"></td>
+	    </tr>
+	    <tr>
+	      <td>주민번호</td>
+	      <td><input type="text" name="jumin1" id="jumin1" size="6" onKeyUp="if(this.value.length==6) myForm.jumin2.focus()">
+	      -
+	      <input type="text" name="jumin2" id="jumin2" size="7" onKeyUp="if(this.value.length==7) myForm.email.focus()">
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>이메일</td>
+	      <td><input type="text" name="email" id="email" size="30"></td>
+	    </tr>
+	    <tr>
+	      <td colspan="2" align="center">
+	        <!-- 
+	        <input type="button" value="check()함수호출" onClick="check()">
+	         -->
+	         <input type="submit" value="전송">
+	        <input type="reset" value="취소"> <!-- 입력한 내용 취소 -->
+	      </td>
+	    </tr>
+	  </table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+02문서_admin.txt
+ProductDAO.java : back-end
+
+//--------------------------------------------------------
+// insert 상품등록(관리자가 하는 일), 서블릿 사용 HttpServletRequest
+//--------------------------------------------------------
+public boolean insertProduct(HttpServletRequest request)
+
+//----------------------------
+// 상품 update(관리자가 하는 일)
+//----------------------------
+public boolean updateProduct(HttpServletRequest request)
+
+//----------------------------
+// shop_info테이블의 행=row=record삭제 (관리자가 하는 일)
+// 그림파일 삭제 (업로드 된 그림 삭제)
+//----------------------------
+public boolean deleteProduct(HttpServletRequest request,int pro_no)
+
+//============================
+// front-end
+//============================
+
+script.js
+style.css
+
+top.jsp
+bottom.jsp
+
+adminLoginForm.jsp
+adminLoginPro.jsp
+adminLogOut.jsp
+
+productList.jsp 상품목록 리스트
+
+productInsertForm.jsp 상품등록
+productInsertPro.jsp
+
+productDetail.jsp 상세보기
+
+
+cartList.jsp
+orderList.jsp

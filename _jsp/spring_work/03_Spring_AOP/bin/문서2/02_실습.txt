@@ -1,0 +1,11 @@
+02_실습.txt
+
+1.sample2.MessageBean.java 인터페이스
+
+2.sample2.MessageBeanImpl.java 구현클래스 
+
+3.sampl2.LoggingAdvice.java 공통부분
+
+4.xml/beans2.xml
+
+5.sample2.HelloAppClient.java 클라이언트

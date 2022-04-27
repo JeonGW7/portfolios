@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test06_selector.html</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+	  $('*').css('color','blue');
+	  $('h1').css('color','red');
+	  $('h1').css('background','ivory');
+	  //
+	  $('div').css('background','yellow');
+  });
+  </script>
+</head>
+<body>
+  <h1>h1입니다</h1>
+  <h2>h2입니다</h2>
+  <p>p태그입니다</p>
+  <span>span태그입니다</span>
+  <div>div태그입니다</div>
+</body>
+</html>

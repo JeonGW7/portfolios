@@ -1,0 +1,5 @@
+package com.example.memboard.service;
+
+public class BoardService {
+
+}

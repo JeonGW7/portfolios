@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+<!-- Computer 타입의 pc3빈 등록 -->
+<bean id="pc3" class="com.spring.model.product.Computer">
+  <constructor-arg value="PC3"/>
+  <property name="cpu" value="인텔셀러론3"/>
+  <property name="memory" value="8G"/>
+  <property name="disk" value="2TB"/>
+</bean>
+
+<!-- ContentsReplacer타입의 contentsReplacer 빈 등록 -->
+<bean id="contentsReplacer" class="com.spring.model.ContentsReplacer">
+</bean>
+
+<!-- Computer 타입의 pc4빈 등록, pc3을 상속 받아서 -->
+<bean id="pc4" parent="pc3">
+  <replaced-method name="getContents" replacer="contentsReplacer"/>
+  <!-- getContent메서드 대신에 contentsReplacer를 실행  -->
+</bean>
+
+<!-- Seller타입의 seller빈 등록 -->
+<!-- Getter Injection -->
+<bean id="seller" class="com.spring.model.product.Seller">
+  <!-- pc3을 찾아 준다 -->
+  <lookup-method name="getComputer" bean="pc3"/>
+  <property name="name" value="hong-gil-dong"/> <!-- setter -->
+</bean>
+</beans>

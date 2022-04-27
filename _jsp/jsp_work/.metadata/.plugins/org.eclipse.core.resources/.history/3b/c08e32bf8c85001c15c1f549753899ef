@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test04_selector.html</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+	  
+  });//jQuery-end
+  </script>
+</head>
+<body>
+  <div id="a">
+    <div id="b">
+      <p title="classB"></p>
+      <span>span1</span>
+    </div>
+    <div id="c" class="cclass">
+      <p>p2</p>
+      <span>span2</span>
+    </div>
+  </div>
+</body>
+</html>

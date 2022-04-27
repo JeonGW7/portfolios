@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test14_for.html</title>
+</head>
+<body>
+  <script type="text/javascript">
+  //1~10까지 출력
+  for(var i=1;i<=10;i++){
+	  document.write(i+"&nbsp;");
+  }
+  document.write("<br>");
+  //1~10까지 짝수 출력
+  //for-if문 사용
+  for(var i=1;i<=10;i++){
+	  if(i%2==0){
+		  document.write(i+"&nbsp;");
+	  }
+  }
+  document.write("<br>");
+  //---------------------------------
+  //      *
+  //     ***
+  //    *****
+  //   *******
+  // 위와 같이 출력하되, 홀수행는 빨강, 짝수행은 파랑으로 출력하세요
+  for(i=1;i<=4;i++){
+	  if(i%2==0){//짝수
+		  document.write("<font color='blue'>");
+	  }else{//홀수
+		  document.write("<font color='red'>");
+	  }
+	  for(k=1;k<=(5-i);k++){
+		  document.write("&nbsp;");
+	  }
+	  for(j=1;j<=(i*2-1);j++){
+		  document.write("*");
+	  }//inner-for
+	  document.write("<br>");
+  }//out-for
+  document.write("</font>");
+  </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+문서.txt
+
+============================================
+EL,JSTL : 지금부터 스프링까지, 회사에서도 쭉 사용
+front-end부분
+============================================
+EL이란
+	-표현언어 이다
+	-${}
+	-JSP2.0부터 추가되었다
+	-새로운 스크립트 언어로써 JSP의 문법을 보완하는 역할을 한다
+	
+-표현식:<%=%>
+-표현언어: ${}
+
+JSP의 4가지 내장 객체
+page, request, session, application
+setAttribute("키",value(Object))
+session.setAttribute("id",id);
+String id=(String)session.getAttribute("id");
+
+application(=프로젝트)
+	WEB-INF/lib/*.jar
+	WEB-INF/classes/*.class 자바빈 
+
+WAS종류
+Tomcat
+WebLogic
+TMAX-JEUS
+
+EL에서 제공된 것
+pageScope, requestScope, sessionScope, applicationScope
+
+EL은 Collection 객체에 대한 접근방법을 제공한다
+Vector, List, ArrayList, Map, HashMap
+
+EL은 수치연산,관계연산,논리연산 제공한다
+
+EL은 자바스크립트의 메서드도 호출 가능하다 
+
+pageScope
+requestScope
+sessionScope
+applicationScope
+
+param		:request.getParameter()와 같은 기능
+paramValue	:request.getParameterValues()와 같은 기능
+initParam	:web.xml에서 지정한 초기 파라미터 값을 얻을때 사용한다
+			 application.getInitParameter("name")
+cookie		:쿠기
+pageContext	:현재 페이지의 pageContext객체
+============================================================
+표현식:<%=request.getMethod()%>
+표현언어:${pageContext.request.method}
+
+표현식:<%=request.getHeader("host")%>
+표현언어:${header.host}
+
+*****
+표현식:<%=session.getAttribute("id")%>
+표현언어:${sessionScope.id}
+
+EL연산자
+
+산술연산자 + - * / %
+/ 또는 div 로도 사용가능 하지만 몫은 아니다(나누기이다)
+% 또는 mod 로도 사용가능
+
+관계연산자
+== 또는 eq
+!= 또는 ne
+<  또는 lt
+<= 또는 le
+>  또는 gt
+>= 또는 ge
+
+논리연산자
+&& 또는 and
+|| 또는 or
+!  또는 not 
+
+EL연산자
+빈의 프로퍼티나 Map요소 접근가능하다
+${dto.name}
+${map.name}
+
+[] : 배열
+() : 우선 순위 연산자
+조건A?B : 조건 연산자
+${조건?A:B}
+
+true/ false
+null 널문자(공백 아니다)
+empty : 값이 없는 경우(Map,Collection이 비어있는지 여부확인)
+isEmpty()와 같은 기능
+============================================================
+WebContent/EL 폴더/test01.jsp
+WebContent/EL 폴더/test02.jsp
+WebContent/EL 폴더/test04_oper.jsp
+

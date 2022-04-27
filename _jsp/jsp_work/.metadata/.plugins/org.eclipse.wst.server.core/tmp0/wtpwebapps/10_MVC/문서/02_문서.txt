@@ -1,0 +1,60 @@
+02_문서.txt
+
+1.모델빈(DTO,DAO) : 05_mem_board 여기에 있는 것 사용
+controller와 view만 작업
+
+BoardDTO.java
+BoardDAO.java
+
+-------------------
+2. src/command.CommandAction.java 인터페이스
+   src/action.board.ListAction.java 작성하는데 CommandAction을 상속 받아서  작성한다
+    
+   src/action.board.WriteFormAction.java 작성하는데 CommandAction을 상속 받아서  작성한다 
+   src/action.board.WriteProAction.java 작성하는데 CommandAction을 상속 받아서  작성한다
+    
+   src/action.board.ContentAction.java 작성하는데 CommandAction을 상속 받아서  작성한다
+    
+   src/action.board.UpdateFormAction.java 작성하는데 CommandAction을 상속 받아서  작성한다 
+   src/action.board.UpdateProAction.java 작성하는데 CommandAction을 상속 받아서  작성한다
+    
+   src/action.board.DeleteFormAction.java 작성하는데 CommandAction을 상속 받아서  작성한다 
+   src/action.board.DeleteProAction.java 작성하는데 CommandAction을 상속 받아서  작성한다 
+-------------------
+컨트롤러 작성
+-------------------
+src/controller.ControllerDispatcher.java
+
+xml파일 대신 properties를 사용 
+WEB-INF/command.properties
+-------------------
+/board/writeForm.do=action.board.WriteFormAction
+/board/writePro.do=action.board.WriteProAction
+/board/list.do=action.board.ListAction
+-------------------
+web.xml컨트롤러 등록
+■ 처리 과정
+1.웹 요청 /board/writeForm.do
+2.컨트롤러가 받는다 
+3.해당 Action 처리 (DB처리(DAO메서드 호출)),view 리턴 
+4.view(jsp)에서 웹화면에 반영한다 /board/writeForm.jsp
+-------------------
+MVC 프레임워크이 만들어 졌으면
+model(DAO,DTO) 이전것 사용 :back-end
+action.board.WriteFormAction 작성하고
+command.properties에 추가 
+view(jsp)작성
+test 
+-------------------
+WebContent
+  imgs/복사
+  board/writeForm.jsp
+  board/writePro.jsp
+  board/list.jsp
+  board/content.jsp
+  board/updateForm.jsp
+  board/updatePro.jsp
+  board/deleteForm.jsp
+  board/deletePro.jsp
+-------------------
+web.xml 컨트롤 등록(서블릿 등록) 

@@ -1,0 +1,9 @@
+test07_select_문서
+m=document.myForm.job.options.selectedIndex ; //인덱스 값을 얻는다
+ 
+document.myForm.job.options[m].text; //클라이언트 화면에서 눈에 보여지게 한다
+document.myForm.job.options[m].value; //서버로 넘어가는 값 
+
+if(document.myForm.job.options[m].selected){//m번째 인덱스가 선택 되었으면 
+	처리내용;
+}

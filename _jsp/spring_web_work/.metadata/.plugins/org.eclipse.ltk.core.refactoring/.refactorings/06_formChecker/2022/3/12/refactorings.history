@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;formChecker.html&apos; to &apos;check2&apos;&#x0D;&#x0A;- Original project: &apos;06_formChecker&apos;&#x0D;&#x0A;- Destination element: &apos;check2&apos;&#x0D;&#x0A;- Original element: &apos;formChecker.html&apos;" description="Copy file" element1="WebContent/check/formChecker.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1647402044347" target="/06_formChecker/WebContent/check2" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.xml.XmlBeanFactory"/>
+<fullyQualifiedTypeName name="org.springframework.core.io.ClassPathResource"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.FileSystemXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.spring.hello.HelloService"/>
+<fullyQualifiedTypeName name="com.spring.model.product.client.SaleItemClient"/>
+<fullyQualifiedTypeName name="com.spring.model.product.SaleItem"/>
+<fullyQualifiedTypeName name="com.spring.model.CollectionBean"/>
+<fullyQualifiedTypeName name="com.spring.model.product.Notebook"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.support.MethodReplacer"/>
+<fullyQualifiedTypeName name="com.spring.model.product.Computer"/>
+<fullyQualifiedTypeName name="java.nio.channels.SeekableByteChannel"/>
+<fullyQualifiedTypeName name="com.spring.model.product.Seller"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.spring.service.order.CartService"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="com.spring.model.Config"/>
+<fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInvocation"/>
+<fullyQualifiedTypeName name="org.aopalliance.intercept.MethodInterceptor"/>
+<fullyQualifiedTypeName name="org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor"/>
+<fullyQualifiedTypeName name="org.springframework.aop.framework.ProxyFactoryBean"/>
+<fullyQualifiedTypeName name="sample1.MessageBean"/>
+<fullyQualifiedTypeName name="sample2.MessageBean"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Around"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+<fullyQualifiedTypeName name="java.lang.Throwable"/>
+<fullyQualifiedTypeName name="org.springframework.util.StopWatch"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="sample3.MessageBean"/>
+</qualifiedTypeNameHistroy>

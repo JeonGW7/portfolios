@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test03_tag_make.html</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+	  //처리내용
+	  $("<div>Hello</div>")
+	  .appendTo(document.body)
+	  .hide()
+	  .css('color','red')
+	  .show('show');
+  });
+  </script>
+</head>
+<body>
+  <button id="btn">click</button>
+  <div class="container"></div>
+</body>
+</html>

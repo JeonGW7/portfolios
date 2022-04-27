@@ -1,0 +1,35 @@
+01_문서.txt
+새 프로젝트
+  03_jsp_test
+  web.xml 체크
+  
+1. MySQL 실행
+2. DB만들기
+3. DB사용하기
+4. table 만들기
+5. JSP웹프로그램
+
+===================================================
+실습1
+2. DataBase 만들기 : 이름 : testdb1 : create database testdb1;
+3. DB사용하기 : use testdb1;
+4. table 만들기  
+create table member1(
+id varchar(20) primary key,
+pw varchar(20) not null,
+name varchar(30) not null,
+email varchar(40) not null
+);
+===================================================
+JSP 프로젝트
+WebContent/member01
+inputForm.jsp  입력폼,
+  힌트
+ JQuery 데이터 입력 여부 체크 
+inputPro.jsp   DB에 insert
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+db.txt
+
+c:\> sqlplus scott/tiger
+DB(sid) : XE
+
+drop table board;
+
+테이블 만들기
+create table board(
+num number(4) primary key, --글번호
+writer varchar2(30) not null,  --글쓴이
+subject varchar2(50) not null,  --글제목
+content varchar2(200) not null,  --글내용
+pw varchar2(10) not null,  --암호
+regdate date,  --날짜
+readcount number(4) default 0, --조회수
+ref number(4) not null, --글 그룹
+re_step number(4) not null,  --글순서
+re_level number(4) not null,  --글깊이
+ip varchar2(20)  --ip
+);
+------------------------------------------
+set linesize 180
+col num format 99999;
+col writer format a10;
+col subject format a10;
+col content format a30;
+col pw format a10;
+col regdate format a10;
+col readcount format 99999;
+col ref format 99999;
+col re_step format 99999;
+col re_level format 99999;
+col ip format a15;
+------------------------------------------
+일련번호
+drop sequence 시퀀스 이름 
+drop sequence board_seq;
+
+시퀀스 만들기
+create sequence board_seq;
+
+back-end
+src/boardoracle.BoardDTO.java
+src/boardoracle.BoardDAO.java : mysql것을 복사하여 수정

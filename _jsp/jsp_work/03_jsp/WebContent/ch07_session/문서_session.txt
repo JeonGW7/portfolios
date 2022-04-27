@@ -1,0 +1,46 @@
+문서_session.txt
+session이란 : 서버측에서 사용자 정보를 관리 하는 것이다 (마트, 화장품)
+
+예를 들어 : 로그인 후 ,id를 session에 setAttribute("id","kim")등록하면 된다 
+
+String id=(String)session.getAttribute("id");
+String cart=(String)session.getAttribute("cart");
+
+Hashtable : 스레드 기능이 있다
+HashMap :스레드 기능이 없다
+
+Vector : 스레드 기능이 있다
+ArrayList : 스레드 기능이 없다 
+
+■ HttpSession클래스의  메서드들
+  String getId() : 세션Id를 얻는다(세션ID는 자동으로 부여된다)
+  long getCreationTime(): 1970-01-01 0:0:0를 기준으로 session이 생성된 시간을 리턴한다
+  참고 : Math.random(): 1970-01-01 0:0:0를 기준
+  
+ void setMaxInactiveInterval(int interval):사용자의 요청없이 최대 세션유지 시간을 설정한다
+ int  getMaxInactiveInterval() :세션 유지 시간을 리턴한다
+ 
+■ 실습1
+ ex01 폴더
+   sessionTest.html
+   sessionTest.jsp
+   sessionTest2.jsp 
+   
+■  필수로 사용하는 메서드들   
+   session.setAttribute("id", id);//세션 설정 ★★★★★★★
+   String id=(String)session.getAttribute("id");//id에 해당하는 값을 얻는다
+   session.invalidate();//세션무효화, 로그아웃 하때 사용
+   
+■ 실습2
+   ex02 폴더
+     menu.jsp - 장바구니에 넣는 작업
+     remove.jsp - 장바구니에서 제거
+     cart.jsp
+     
+ ■ 사이트 구축 할 경우 
+      로그인 , 회원 가입
+   session.setAttribute("id",id);
+
+     게시판 글쓰기 , 댓글쓰기, 글 수정 , 글 삭제 이것들을 할때면 
+   session.getAttribute("id") 이 작업이 필요하다       
+

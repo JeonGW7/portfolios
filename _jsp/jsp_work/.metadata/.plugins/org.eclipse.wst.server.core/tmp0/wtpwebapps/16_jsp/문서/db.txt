@@ -1,0 +1,28 @@
+16_jsp 프로젝트
+
+create table board(
+num int not null primary key auto_increment,
+name varchar(30) not null,
+subject varchar(40) not null,
+content text not null,
+pw varchar(20) not null,
+ip varchar(20)
+);
+
+connection pool 세팅
+context.xml 넣기
+
+back-end작업
+src/board.BoardDTO.java
+src/board.BoardDAO.java
+
+front-end
+WebContent
+	board
+		boardForm.jsp
+			힌트속성
+			name부분에 '이름입력'
+			subject부분에 '글제목 입력'
+			content부분에 '글내용입력'
+			데이터 입력여부 체크
+		boardPro.jsp

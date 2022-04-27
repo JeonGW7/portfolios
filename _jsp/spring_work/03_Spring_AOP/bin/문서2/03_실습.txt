@@ -1,0 +1,13 @@
+03_실습.txt
+
+어노테이션 사용
+
+1.sample3.MessageBean.java 인터페이스
+
+2.sample3.MessageBeanImpl.java 구현 클래스
+
+3.sample3.LoggingAdvice.java 공통부분
+
+4.xml/beans3.xml
+
+5.sample3.HelloAppClient.java 클라이언트

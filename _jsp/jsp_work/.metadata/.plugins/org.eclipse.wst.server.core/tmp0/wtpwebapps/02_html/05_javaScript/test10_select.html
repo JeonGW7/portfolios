@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test10_select.html onChange핸들러 사용</title>
+  
+</head>
+<!-- 
+핸들러 종류
+onClick="ss()"	클릭했을 때 이벤트 발생
+onFocus() 		포커스를 얻었을 때
+onChange()		값이 변경 되었을 때 이벤트 발생
+ -->
+<body>
+  <form name="myForm">
+    <select name="bb" onchange="self.location=this.value">
+      <option selected>방송국 선택</option>
+      <option value="http://www.imbc.co.kr">MBC</option>
+      <option value="http://www.kbs.co.kr">KBS</option>
+      <option value="http://www.sbs.co.kr">SBS</option>    
+    </select>
+  </form>
+</body>
+</html>

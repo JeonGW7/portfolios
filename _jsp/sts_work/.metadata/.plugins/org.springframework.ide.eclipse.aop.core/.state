@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="test04oracle"/>
+<aop-project name="test05memboard"/>
+<aop-project name="test09upload"/>
+<aop-project name="springteamproject"/>
+<aop-project name="test02board"/>
+<aop-project name="test07tilesmemboard"/>
+<aop-project name="test01"/>
+<aop-project name="test06tiles"/>
+<aop-project name="test08shop"/>
+<aop-project name="test03mysql"/>
+</aop-reference-model>

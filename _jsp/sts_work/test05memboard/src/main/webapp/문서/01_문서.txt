@@ -1,0 +1,31 @@
+01_문서.txt
+
+jsp MVC 작업
+name : test05memboard
+package : co.kr.test05memboard
+
+template 
+tiles
+
+mysql 
+db:ch20
+table: board,member
+
+pom.xml
+
+web.xml
+
+root-context.xml 빈 등록
+
+src/main/resources/mybatis(패키지)/mybatis-config.xml
+board.xml
+member.xml
+
+value="classpath:co/kr/test04oracle/mybatis/*.xml
+board.xml
+
+BoardController.java 
+views/board/list.jsp
+views/board/writeForm.jsp
+views/board/content.jsp
+views/board/editForm.jsp

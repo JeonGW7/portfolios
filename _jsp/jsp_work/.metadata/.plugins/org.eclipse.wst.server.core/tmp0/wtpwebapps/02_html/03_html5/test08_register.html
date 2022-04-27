@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test08_register.html</title>
+<link rel="stylesheet" href="test08_regiter.css" type="text/css">
+</head>
+<!-- 
+fieldset
+legend
+label
+
+required : 필수입력속성
+autofocus : 현재 객체에 포커스 설정 속성 
+placeholder : 힌트 기재(많이 사용)
+
+readonly : 읽기전용, 편집못함, 값이 서버로 넘어간다
+disabled : 사용하지 마세요, 값이 서버로 넘어가지 않는다
+ -->
+<body>
+  <form method="post" action="test08_register.jsp">
+    <fieldset>
+      <legend>로그인정보</legend>
+      <ol>
+        <li><label for="id">ID</label>
+        <input type="text" name="id" id="id" required autofocus="autofocus">
+        <li><label for="pw">암호</label>
+        <input type="password" name="pw" id="pw" required>
+        <li><label for="pw2">암호확인</label>
+        <input type="password" name="pw2" id="pw2" required>
+        <li><label for="label">회원등급</label>
+        <input type="text" name="level" id="level" readonly value="준회원">
+      </ol>
+    </fieldset>
+    <fieldset>
+      <legend>개인정보</legend>
+      <OL>
+        <li><label for="name">이름</label>
+        <input type="text" name="name" placeholder="이름 입력" size="20" maxlength="20">
+        <li><label for="email">email</label>
+        <input type="email" name="email" placeholder="aaa@abc.com" required autocomplete="on">
+        <li><label for="tel">전화</label>
+        <input type="tel" name="tel" placeholder="공백없이 숫자만 입력" required autocomplete="off">
+      </OL>
+    </fieldset>
+    <fieldset>
+      <legend>코딩숙련도(상,중,하)</legend>
+      <OL>
+        <li><label for="range">숙련도</label>
+        <input type="range" name="range" min="1" max="3" step="1">
+      </OL>
+    </fieldset>
+    <fieldset>
+      <button type="submit">전송</button>
+    </fieldset>
+    
+  </form>
+</body>
+</html>

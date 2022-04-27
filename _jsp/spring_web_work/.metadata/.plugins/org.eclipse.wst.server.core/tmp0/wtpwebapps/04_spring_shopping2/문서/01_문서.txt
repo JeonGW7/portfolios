@@ -1,0 +1,32 @@
+01_문서.txt
+새프로젝트
+Dynamic Web
+04_spring_shopping2
+web.xml
+
+WEB-INF/lib/*.jar 
+web.xml에 프론트 컨트롤러 등록
+applicationContext.xml (back-end bean등록)
+shopping2-servlet.xml (컨트롤러 등록, 뷰 작업)
+
+web.xml수정
+
+----------------------------
+controller
+dao
+logic  
+03_Spring_shopping1에서 복사
+
+1.ItemDao.java
+2.ItemCatalog.java
+3.Shop.java
+*shopping2-servlet.xml으로 이름수정
+4.controller.IndexController.java 수정
+4.controller.DetailController.java
+
+5.WebContent/css 복사 
+5.WebContent/imgs 
+
+6.WEB-INF/jsp/header.jsp
+7.index.jsp수정
+8.WEB-INF/jsp/detail.jsp

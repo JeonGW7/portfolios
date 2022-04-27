@@ -1,0 +1,70 @@
+02_문서.txt
+
+빈 작성 규칙 : DTO
+1. 멤버변수 : private으로 선언한다
+  private String id; //은폐필드,전역변수
+  private String pw;
+  private String name;
+2. 메서드 : 변수이름으로 만든다 setXXX() getXXX()
+  public void setID(String id){
+    this.id=id;
+  } 
+  public String getId(){
+    return id;
+  }
+3. 메서드 접근 제한자는 public으로 해야 외부에서 접근 가능하다 
+4. 멤버변수 boolean형인 경우, getXXX() 대신 isXXX()로 만든다
+5. 기타 필요한 멤버변수,멤버 메스드를 사용할 수 있다
+---------------------------------
+<빈 만들기>
+package mypa;
+import~
+public class TestDTO{
+  private String id;
+  public void setId(String id){
+    this.id=id;
+  }
+  public String getId(){
+    return id;
+  }
+}
+------------------------------------------------------------------
+컴파일(저장)만 한다
+------------------------------------------------------------------
+JSP사용 방법 
+<jsp:useBean id="dto" class="TestDTO" scope=""/>
+TestDTO dto=new TestDTO();
+id="빈이름"
+class="패키지.클래스이름"
+scope="page" : default , request,session 을 많이 사용한다, application은 거의 사용X
+범위지정  
+ ------------------------------------------------------------------
+
+<jsp:useBean id="객체명"class="패키지.클래스이름" scope="">
+ <%--빈에 값을 세팅--%>
+ <jsp:setProperty name="id명" property="빈의변수" value="값"/>
+ <jsp:setProperty name="dto" property="id" value="kim"/>
+ <%--빈으로부터 값을 얻어오기--%>
+ <jsp:getProperty name="id명" property="property명(빈의변수)"/>
+ <jsp:getProperty name="dto" property="id"/>
+</jsp:useBean>
+ ------------------------------------------------------------------
+ ★jsp에서 setProperty 사용법 4가지
+ 1.<jsp:setProperty name="id명" property="빈의변수" value="값"/>
+ 2.<jsp:setProperty name="id명" property="빈의변수" param="html의 파라미터명"/>
+ 3.<jsp:setProperty name="id명" property="빈의변수"/> - 빈의 변수명과 html의 파라미터명이 같을 때(파라미터를 생략가능)
+ 4.<jsp:setProperty name="id명" property="*"/> - 빈의 변수명과 html의 파라미터명이 모두 같을 때  
+ ------------------------------------------------------------------
+ 실습1
+src/mypa.TestDTO.java
+WebContent/ch09_bean/TestBean.jsp
+
+  실습2
+src/mypa.TestDTO2.java
+WebContent/ch09_bean/TestBean2.html
+WebContent/ch09_bean/TestBean2.jsp
+
+ 실습3
+src/mypa.TestDTO3.java
+WebContent/ch09_bean/TestBean3.html
+WebContent/ch09_bean/TestBean3.jsp

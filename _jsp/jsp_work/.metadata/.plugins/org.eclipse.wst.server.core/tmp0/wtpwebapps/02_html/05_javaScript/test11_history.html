@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test11_history.html</title>
+  <script type="text/javascript">
+    //★★★★★★★
+    //location.replace("url") : 지정url로 대치된다(back()안된다)
+    //location.href="url" : url페이지로 이동(back()된다
+    //location.reload() : 현재 화면을 새로고침
+    //history개체 : 브라우처로 봤던 사이트를 임시로 저장한다 
+    function back(){
+    	history.back();
+    	//history.go(-1); //back()=go(-1) go(1)=front
+    	//a.html b.html c. html d.html e. html
+    	// 현재 c.html 에서 back을 하면 a.html
+    }
+	function front(){
+    	history.forward();
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <input type="button" value="뒤로" onClick="back()">
+    <input type="button" value="앞으로" onClick="front()">
+    
+    <a href="test01.html">test01.html</a>
+    <a href="test06_addr.html">test06_addr.html</a>
+  </form>
+</body>
+</html>

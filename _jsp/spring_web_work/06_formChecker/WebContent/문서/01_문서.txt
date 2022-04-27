@@ -1,0 +1,27 @@
+01_문서.txt
+
+새 프로젝트
+Dynamic Web
+이름:06_formChecker
+
+클라이언트에서 데이터 유효성 체크
+
+서버측에서 데이터 유효성 체크
+==================
+클라이언트에서 데이터 유효성 체크
+==================
+WebContent 
+	check폴더
+	  script.js
+	  formChecker.html
+	  formChecker.jsp
+	  
+=====================
+서버측에서 데이터 유효성 체크
+=====================
+src/check.FormChecker.java
+WebContent 
+	check2폴더
+	  script.js
+	  formChecker.html
+	  formChecker.jsp

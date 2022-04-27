@@ -1,0 +1,17 @@
+03_request.txt
+request 내장객체: HttpServletRequest의 객체이다 
+
+메서드 
+1.request.getParameter("name") : 클라이언트의 form안의 name에 해당하는 파라미터값을 얻는다
+2.request.getParameterValues("name") : 클라이언트의 form안의 name에 해당하는 파라미터값들을 모두 받는다
+3.request.getParameterNames() : form내부의 모든 파라미터 이름을 받는다
+4.request.getMethod() : 요청방식 알아내기(get,post)
+5.request.getRequestURI() : /03_jsp/ch02/03_test.jsp
+6.request.getRequestURL() : http://localhost:9001/03_jsp/ch02/03_test.jsp
+7.request.getRemoteHost() : 클라이언트 호스트 이름 알아내기 
+8.request.getRemoteAddr() : 클라이언트 ip알아내기 
+9.request.getRemoteUser() : 인증을 이용한 경우(이용자 ID알아내기)
+10.request.getProtocol() : 사용중인 프로토콜 알아내기 (http://1.1) 
+11.request.getServerName() : 서버 도메인 이름 알아내기 
+12.request.getServerPort() : 서버 포트 알아내기 
+13.request.getHeader(name) : name에 해당하는 요청 해더 값을 알아내기 

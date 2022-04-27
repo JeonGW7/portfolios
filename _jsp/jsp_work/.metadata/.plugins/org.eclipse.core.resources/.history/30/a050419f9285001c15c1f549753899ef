@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test08_formcheck.html</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+  function check(){
+	  
+  }
+  </script>
+</head>
+<body>
+  <form name="myForm" onSubmit="return check()">
+    <table border="1">
+      <tr>
+        <td>ID</td>
+        <td><input type="text" name="id" id="id" size="20"></td>
+      </tr>
+      <tr>
+        <td>암호</td>
+        <td><input type="password" name="pw" id="pw" size="20"></td>
+      </tr>
+      <tr>
+        <td>암호확인</td>
+        <td><input type="password" name="pw2" id="pw2" size="20"></td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td><input type="text" name="name" id="name" size="20"></td>        
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

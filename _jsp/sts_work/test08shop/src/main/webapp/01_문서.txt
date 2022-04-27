@@ -1,0 +1,40 @@
+01_문서.txt
+
+DB작업
+MySql
+
+use shopdb;;
+desc shop_info;
++---------+---------------+------+-----+---------+----------------+
+| Field   | Type          | Null | Key | Default | Extra          |
++---------+---------------+------+-----+---------+----------------+
+| pro_no  | int(5)        | NO   | PRI | NULL    | auto_increment |
+| code    | varchar(20)   | NO   |     | NULL    |                |
+| name    | varchar(30)   | NO   |     | NULL    |                |
+| price   | int(5)        | NO   |     | NULL    |                |
+| stock   | int(5)        | YES  |     | NULL    |                |
+| detail  | varchar(4000) | YES  |     | NULL    |                |
+| comp    | varchar(30)   | YES  |     | NULL    |                |
+| regdate | datetime      | YES  |     | NULL    |                |
+| image   | varchar(30)   | YES  |     | NULL    |                |
++---------+---------------+------+-----+---------+----------------+
+================================
+
+새프로젝트
+spring Legacy project
+test08shop
+
+pom.xml
+web.xml
+
+src/main/resource/mybatis 생성/mybatis-config.xml/
+							  shop.xml
+root-context.xml 
+
+src/main/java/
+model.shop.ShopDto.java
+
+shop.xml
+ShopController.java
+
+views/shop/shopList.jsp

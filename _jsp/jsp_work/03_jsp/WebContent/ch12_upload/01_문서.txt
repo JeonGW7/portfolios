@@ -1,0 +1,21 @@
+01_문서.txt
+
+자바빈을 이용한 파일업로드, 메일보내기
+cos.jar를 다운받는다 
+
+_util에 복사, 압축풀기
+
+C:\에 복사
+
+C:\cos-20.08\lib 에 cos.jar가 있음
+
+cos.jar를 Jdk/jre/lib/ext에 넣는다
+
+C:\Tomcat 8.0\lib에도 넣는다
+
+﻿﻿
+환경변수
+
+classpath=﻿.;C:\Program Files\Java\jdk1.8.0_40\lib\tools.jar;C:\cos-20.08\lib\cos.jar;
+
+완료후 이클립스 재구동

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test07_selector.html</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    $(function(){
+    	$('input[type=text"]')
+    	.val('Hello jQuery')
+    	.css('color','green');
+    	$('input[type=radio"]')
+    	.css('background','ivory');
+    });
+  </script>
+</head>
+<body>
+  <input type="text" value="text"><br>
+  <input type="radio">라디오 버튼<br>
+  <input type="checkbox">체크박스<br>
+</body>
+</html>

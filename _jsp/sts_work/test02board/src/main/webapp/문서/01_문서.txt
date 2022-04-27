@@ -1,0 +1,42 @@
+01_문서.txt
+
+간단한 게시판
+
+use stsdb;
+create table board(
+num int(4) not null auto_increment primary key,
+writer varchar(30) not null,
+subject varchar(50) not null,
+content text not null,
+pw varchar(20) not null,
+wdate date,
+readcount int default 0,
+ip varchar(30)
+);
+
+new spring Legacy project
+test02board
+package : co.kr.test02board
+
+-----------------------------------
+pom.xml 추가
+web.xml 추가
+root-context.xml 
+
+-----------------------------------
+src/main/resources
+		mybatis 패키지
+		mybatis-config.xml
+		board.xml 
+		
+src/main/java/
+model.board.BoardDto.java
+
+src/main/resources/mybatis
+board.xml
+
+src/main/java
+co.kr.test02board
+BoardController.java
+
+view/board/writeForm.jsp

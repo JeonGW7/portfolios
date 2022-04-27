@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- DAO대신 board.xml을 사용한다 -->
+<mapper namespace="board">
+  <!-- 전체 리스트 -->
+  <select id="selectAll" resultType="HashMap"> <!-- resultType=return -->
+    select * from board
+  </select>
+  
+  <!-- 검색 리스트 -->
+  <select id="searchAll" parameterType="Map" resultType="Map">
+    select * from board
+    where ${keyField} like '%${keyWord}%'
+  </select>
+  <!-- insert -->
+  <insert id="insertBoard" parameterType="board.model.BoardDto">
+    insert into 
+    board(writer,subject,content,pw,wdate,ip)
+    values(#{writer},#{subject},#{content},#{pw},NOW(),#{ip})
+  </insert>
+  
+  <!-- 조회수 증가 -->
+  <update id="readCountBoard" parameterType="int">
+    update board set readcount=readcount+1
+    where num=#{num}
+  </update>
+  
+  <!-- 글내용 보기, 글 수정 폼 -->
+  <select id="selectOne" parameterType="int" resultType="board.model.BoardDto">
+    select * from board
+    where num=#{num}
+  </select>
+  
+  <!-- DB글수정 -->
+  <update id="updateBoard" parameterType="board.model.BoardDto">
+    update board
+    set writer=#{writer},subject=#{subject},content=#{content}
+    where num=#{num} and pw=#{pw}
+  </update>
+  
+  <!-- DB글삭제 -->
+  <delete id="deleteBoard" parameterType="int">
+    delete from board
+    where num=#{num}
+  </delete>
+</mapper>

@@ -1,0 +1,14 @@
+03_DI실습.txt
+
+실습 : Setter Injection => setter메서드에 클래스객체를 인수로 사용
+
+1. SaleItem.java 수정
+	-디폴트생성자 
+	-setter메서드 추가 => item,cnt,price
+	
+2. saleItem.xml 수정 
+	-SaleItem타입의 saleItem2 빈등록
+	-<property>태그를 이용하여 pc01참조
+	
+3. SaleItemClient.java 수정
+	-saleItem2빈을 참조하여 saleItem2.display()를 출력

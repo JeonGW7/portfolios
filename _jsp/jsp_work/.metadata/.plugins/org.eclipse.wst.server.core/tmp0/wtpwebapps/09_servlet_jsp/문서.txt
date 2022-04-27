@@ -1,0 +1,7 @@
+문서.txt
+lib/*.jar 넣고
+
+서브릿에서 JSP로 포워딩 한다 : MVC기법의 Controller에서 사용되는 기법이다
+MVC : Model(DTO,DAO) View(JSP) Controller(Servlet) 
+
+src/ServletJsp.java

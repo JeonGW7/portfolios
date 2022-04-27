@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="reply">
+	<!-- 댓글 조회 -->
+	<select id="replyList" parameterType="java.util.Map" resultType="freeReplyDTO">
+		select * from reply
+	</select>
+
+	<select id="getReply" parameterType="Integer" resultType="freeReplyDTO">
+		select *
+		from reply
+		where free_no=#{free_no}
+	</select>
+
+	<!-- 댓글 작성-->
+	<insert id="replyWrite" parameterType="freeReplyDTO">
+		insert into reply(free_no,reply_writer,reply_content,reply_regDate)
+		values(#{free_no},#{reply_writer},#{reply_content},NOW())
+	</insert>
+	
+	 <!--  댓글 수정--> 
+	<update id="replyModify" parameterType="freeReplyDTO">
+		update reply set
+		reply_writer=#{reply_writer},
+		reply_content=#{reply_content}
+		where reply_rno=#{reply_rno}
+		and item_no=#{item_no}
+	</update>
+
+	<!-- 댓글 삭제 -->
+	<delete id="replyDelete" parameterType="map">
+		delete from reply
+		where reply_rno=#{reply_rno} and free_no=${free_no}
+	</delete>
+	
+</mapper>

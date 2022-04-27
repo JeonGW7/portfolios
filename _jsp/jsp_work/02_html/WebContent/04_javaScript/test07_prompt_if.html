@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test07_prompt.html 점수구하기</title>
+</head>
+<body>
+<!-- 
+점수를 입력 받아 학점 구하기 
+90~100  A
+80~89   B
+70~89   C
+60~69   D
+60미만     F
+ -->
+ <script type="text/javascript">
+ m=prompt("점수를 입력하시오");
+ n=parseInt(m);//문자열을 숫자로 변환 
+ if(m=="" || m==null){
+	 alert("입력하지 않았거나 취소버튼 눌렀음");
+ }else if(isNaN(n)){ //NaN -> Not a Number 숫자가 아니면
+	 alert("Invalid Number: 숫자를 입력하세요");
+ }else if(n>100 || n<0){
+	 alert("0에서 100 사이만 입력하세요");
+ }else if(n>=90){
+	 alert(n+"은 A학점");
+ }else if(n>=80){
+	 alert(n+"은 B학점");
+ }else if(n>=70){
+	 alert(n+"은 C학점");
+ }else if(n>=60){
+	 alert(n+"은 D학점");
+ }else{
+	 alert(n+"은 F학점");
+ }
+ </script>
+</body>
+</html>

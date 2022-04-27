@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tes04.html</title>
+</head>
+<!-- body 태그에 배경색 넣기 -->
+<!-- text는 : 본문 전체 글씨색 지정 -->
+<body bgcolor="blue" text="white">
+ <h2>안녕하세요</h2>
+ <h2>안녕하세요</h2>
+ <h2>안녕하세요</h2>
+</body>
+</html>

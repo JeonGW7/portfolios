@@ -1,0 +1,28 @@
+01_DB문서.txt
+모델1방식은 jsp로 DB작업까지 하는 것
+
+mysql>use mydb;
+mysql> 
+create table board2(
+num int not null auto_increment primary key, #글번호
+writer varchar(30) not null, #글쓴이
+subject varchar(30) not null, #글제목
+content text not null, #글내용
+pw varchar(20) not null, #암호
+wdate date, #날짜
+readcount int unsigned default 0, #조회수
+ip varchar(20)
+);
+
+show tables;
+desc board2;
+
+-----------------------------------------------------
+writeForm.jsp 글쓰기 폼
+writePro.jsp DB에 insert작업
+list.jsp 글목록 보기 
+content.jsp 글내용 보기 
+editForm.jsp 글수정하기
+editPro.jsp DB글 update
+deleteForm.jsp 글삭제 폼
+deletePro.jsp DB글 delete하기 

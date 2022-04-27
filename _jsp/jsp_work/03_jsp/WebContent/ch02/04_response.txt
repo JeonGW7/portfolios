@@ -1,0 +1,43 @@
+04_response.txt
+
+response.setContentType("text/html;charset=UTF-8")
+response.setContentType(type) : 출력문서 contentType 설정
+response.setHeader(name,value)형식
+response.setHeader("Refresh","2:URL=https://www.daum.net");
+  2초후에 지정url로 이동한다
+  
+☆response.sendRedirect("url");//지정 url로 페이지 이동
+ex)게시판 글쓰기->리스트로 이동
+ex)게시판 글수정->리스트로 이동 
+ex)게시판 글삭제->리스트로 이동
+☆response.sendRedirect("로컬url");
+☆response.sendRedirect("외부url");
+response.sendRedirect("03_request.jsp");
+response.sendRedirect("www.naver.com");
+
+★참고
+forward 액션태그는 로컬 url로만 이동 가능(같은 프로젝트 내에서만 이동된다)
+<jsp:forward page="로컬url"/>
+
+<jsp:forward page="로컬url">
+  <jsp:param name="id" value="kim"/>
+  <jsp:param name="name" value="김제동"/>  
+</jsp:forward>
+
+■ 중요한 것은
+response.sendRedirect()는 웹브라우저가 다른 페이지로 이동할 때 
+다른 페이지로 이동하기위해 웹브라우저에 새로운 요청을 보낸다 
+즉, TCP네트워크 연결이 다시 만들어진다는 것이다 
+※response.sendRedirect()경우는 클라이언트에서 처음 보낸 데이터를 
+새로 이동한 url에서는 사용할 수 없다
+ 왜냐하면 TCP네트워크 연결이 다시 만들어지기 때문이다 
+ 
+반면
+forward액션은 JSP컨테이너 내에서 http요청을 다른 페이지로 보내는 것이다 
+그래서 http요청은 처음 만들어진것(TCP) 하나만 있는 것이다
+forward액션은 클라이언트에서 처음 보낸 데이터를
+새로 이동한 페이지에서 사용할 수 있다  
+
+
+
+ 

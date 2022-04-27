@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test13.html</title>
+  <script type="text/javascript">
+    //★★★★★★★
+    //location.replace("url") : 지정url로 대치된다(back()안된다)
+    //location.href="url" : url페이지로 이동(back()된다
+    //location.reload() : 현재 화면을 새로고침
+    //history개체 : 브라우처로 봤던 사이트를 임시로 저장한다
+    function rep(){
+    	location.replace("https://www.daum.net"); //back키 안된다 
+    }
+    function hre(){
+    	location.href=("https://www.naver.com"); //back키 가능하다 
+    }
+    function reload(){
+    	location.reload(); //새로고침
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <input type="button" value="daum" onClick="rep()">
+    <input type="button" value="naver" onClick="hre()">
+    <input type="button" value="새로고침" onClick="reload()">
+  </form>
+</body>
+</html>

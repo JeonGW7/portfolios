@@ -1,0 +1,28 @@
+07_initializing.txt
+
+*Servlet 생명 주기
+init() -----> service() -----> destroy()
+			  doGet()
+			  doPost()
+*JSP 생명주기
+jspInit() -----> jspService() -----> jspDestroy()
+
+*Spring 생명주기
+
+방법1)
+implements InitializingBean, DisposableBean 인터페이스 상속
+//InitializingBean의 메서드 오버라이딩
+public void afterProperiesSet() throws Exception{}
+
+//DisposableBean의 메서드 오버라이딩
+public void destroy() throws Exception{}
+
+//---------------------------------------------
+방법2) CartService클래스에 사용자 정의 메서드를 넣고 
+	public void loadItems(){}
+	public void storeItems(){}
+	
+	cart.xml에서 
+	  init_method="loadItems"
+	  destroy_method="storeItems" 이렇게  설정하여 사용한다
+

@@ -1,0 +1,14 @@
+01문서.txt
+
+새프로젝트 10_MVC
+
+MVC : Model(DTO,DAO) View(JSP) Controller(Servlet)
+META-INF/context.xml
+Struts(스트럿츠) : MVC
+Spring : MVC
+
+context.xml 가져와서 META-INF에 넣는다
+
+스프링에서는 Action을 컨트롤러라고 부른다
+컨트롤러를 front컨트롤러라고 한다
+JSP는 스프링과 같은 코딩

@@ -1,0 +1,5 @@
+package com.example.memboard.mapper;
+
+public interface BoardMapper {
+
+}

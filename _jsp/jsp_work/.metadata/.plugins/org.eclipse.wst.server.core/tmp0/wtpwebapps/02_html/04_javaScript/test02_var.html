@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test02_var.html</title>
+  <script type="text/javascript">
+    a=1; //전역변수는 var 생략가능 
+    function aaa(){
+    	//alert("aaa");
+    	var b=2; //지역변수
+    	var c=7; //javaScript는 
+    	var C=17;//대소문자 구분가능
+    	document.write("c:"+c+"<br>");
+    	document.write("C:"+C+"<br>");
+    	document.write("함수 호출 전 a값 :"+a+"<br>");//1
+    	document.write("함수 호출 전 b값 :"+b+"<br>");//2
+    	bb(); //함수호출
+    	document.write("함수 호출 후 a값 :"+a+"<br>");//100
+    	document.write("함수 호출 후 b값 :"+b+"<br>");//2
+    }
+    function bb(){
+    	a=100;
+    	b=200;
+    }
+  </script>
+</head>
+<body>
+  <input type="button" value="함수호출" onClick="aaa()"> <!-- 버튼을 클릭하면 aa호출 -->
+</body>
+</html>

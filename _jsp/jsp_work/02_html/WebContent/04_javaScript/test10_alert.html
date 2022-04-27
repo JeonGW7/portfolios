@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test10_alert.html</title>
+  <script type="text/javascript">
+  function check(){
+	  //alert("aaa");
+	  if(document.myForm.id.value==''){
+		  alert("ID을 입력하세요");
+		  document.myForm.id.focus();//포커스 설정
+		  return false;
+	  }
+	  if(document.myForm.pw.value==''){
+		  alert("암호를 입력 하세요");
+		  document.myForm.pw.focus();
+		  return false;
+	  }
+	  if(document.myForm.name.value==""){
+		  alert("이름을 입력하세요");
+		  document.myForm.name.focus();
+		  return false;
+	  }
+	  //모두 정상적으로 입력되었으면 출력
+	  id=document.myForm.id.value;
+	  pw=document.myForm.pw.value;
+	  name=document.myForm.name.value;
+	  alert("ID:"+id+"\n"+"암호:"+pw+"\n"+name);
+	  
+  }
+  </script>
+</head>
+<body>
+  <h2>회원가입</h2>
+  <form name="myForm" method="get" action="">
+    <table border="1">
+      <tr>
+        <td>ID</td>
+        <td><input type="text" name="id" id="id" size="20"></td>
+      </tr>
+      <tr>
+        <td>암호</td>
+        <td><input type="password" name="pw" id="pw" size="20"></td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td><input type="text" name="name" id="name"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="button" value="함수호출" onClick="check()">
+          <input type="reset" value="취소"> <!-- 입력한 내용을 취소 -->
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

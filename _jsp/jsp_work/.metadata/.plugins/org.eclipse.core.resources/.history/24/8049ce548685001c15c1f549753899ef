@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test01.html</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  //javaScript로 작업 
+  /*window.onload=function(){
+	  alert("웹 페이지 시작시 호출, window.onload");
+  }
+  */
+  //jQuery로 작업
+  jQuery(document).ready(function(){
+	  alert("웹 페이지 시작시 호출, jQuery(document).ready(function(){});");
+  });
+  </script>
+</head>
+<body>
+
+</body>
+</html>

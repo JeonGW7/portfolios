@@ -1,0 +1,20 @@
+05_상속_추상화_실습.txt
+
+실습-빈 상속과 추상화
+1. Notebook 클래스 작성
+	-Computer를 상속 받아서
+2. abstract.xml작성
+	-Computer 타입의 pc1 빈등록
+	-Notebook 타입의 note1 빈 등록
+	-Computer 타입의 pc2 빈 등록
+	  pc1빈을 상속받아서 memory property를 override하여 재정의한다
+	-property를 추상화한 baseSpec빈 선언 
+	-Notebook 타입의 note2빈 등록
+	  baseSpec빈을 상속받아, battery property 추가
+	  
+3. AbstractClient.java 작성
+	-pc1, note1, pc2, note2빈 참조하여 실행한다 
+	
+src/com.spring.model.product.Notebook.java
+abstract.xml
+src/com.spring.model.product.client.AbstractClient.java

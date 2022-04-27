@@ -1,0 +1,15 @@
+DB.txt
+
+use ch20;
+create table test(
+name varchar(30) not null,
+email varchar(30) not null,
+addr varchar(50) not null
+);
+insert into test values('이순신','lee@nate.com','서울 강남');
+insert into test values('강감찬','kang@nate.com','서울 이태원');
+insert into test values('홍길동','hong@nate.com','서울 노량진');
+insert into test values('김유신','kim@nate.com','인천 남구');
+insert into test values('을지문덕','duck@nate.com','경기도 용산');
+
+WebContent/usePool.jsp

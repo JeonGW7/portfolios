@@ -1,0 +1,54 @@
+db.txt
+
+커넥션풀, ajax, 자바빈을 사용하여 
+회원관리 시스템 프로젝트 작성
+
+DB이름: ch20
+
+use ch20;
+drop table member;
+
+create table member(
+id varchar(20) not null primary key,
+pw varchar(15) not null,
+name varchar(30) not null,
+email varchar(30) not null,
+tel varchar(20) not null,
+zipcode varchar(10) not null,
+addr varchar(30) not null,
+addr2 varchar(20) not null, #상세주소
+regdate date #가입날짜
+);
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| id      | varchar(20) | NO   | PRI | NULL    |       |
+| pw      | varchar(15) | NO   |     | NULL    |       |
+| name    | varchar(30) | NO   |     | NULL    |       |
+| email   | varchar(30) | NO   |     | NULL    |       |
+| tel     | varchar(20) | NO   |     | NULL    |       |
+| zipcode | varchar(10) | NO   |     | NULL    |       |
+| addr    | varchar(30) | NO   |     | NULL    |       |
+| addr2   | varchar(20) | NO   |     | NULL    |       |
+| regdate | date        | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+05_mem_board 프로젝트
+connection pool 세팅
+META-INF/context.xml 
+src/member.MemberDTO.java
+src/member.MemberDAO.java
+WebContent
+  member 폴더
+  confirmID.jsp //아이디 중복체크
+  inputForm.jsp //입력폼
+  inputPro.jsp 
+  main.jsp
+  loginForm.jsp
+  loginPro.jsp
+  logOut.jsp
+  modify.jsp
+  modifyForm.jsp // 내정보수정
+  modifyPro.jsp 
+  deleteForm.jsp //탈퇴
+  deletePro.jsp

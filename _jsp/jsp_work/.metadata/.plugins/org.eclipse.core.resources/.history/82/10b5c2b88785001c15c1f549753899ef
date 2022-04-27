@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Insert title here</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  //init()함수
+  var init=function(){
+	alert("init()");  
+  };
+  //init()함수 호출
+  jQuery(document).ready(init); //init함수 호출
+  </script>
+</head>
+<body>
+
+</body>
+</html>

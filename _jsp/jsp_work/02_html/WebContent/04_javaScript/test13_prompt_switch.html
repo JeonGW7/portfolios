@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test13_prompt_switch.html</title>
+</head>
+<body>
+  <script type="text/javascript">
+  //점수를 입력받아서 학점 구하기
+  m=prompt("점수를 입력하세요");
+  n=parseInt(m);//문자열을 정수로 변환
+  if(m=="" || m==null){
+		 alert("입력하지 않았거나 취소버튼 눌렀음");
+  }else if(isNaN(n)){ //NaN -> Not a Number 숫자가 아니면
+		 alert("Invalid Number: 숫자를 입력하세요");
+  }else if(n>100 || n<0){
+	  alert("0~100사이만 입력 하세요");
+  }else{
+	  n=Math.floor(n/10);//내림값 
+	  switch(n){
+	  case 10:
+	  case 9:
+		  alert("A학점입니다");
+		  break;
+	  case 8:
+		  alert("B학점입니다");
+		  break;
+	  case 7:
+		  alert("C학점입니다");
+		  break;
+	  case 6:
+		  alert("D학점입니다");
+		  break;
+	  default://기타 0~59사이 
+		  alert("F학점입니다");
+	  }//switch-end
+  }
+  </script>
+</body>
+</html>

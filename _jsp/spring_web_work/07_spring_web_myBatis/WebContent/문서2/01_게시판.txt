@@ -1,0 +1,50 @@
+01_문서.txt
+
+새프로젝트
+dynamic Web
+이름:07_spring_web_myBatis
+web.xml
+
+DB작업
+create database mydb5;
+use mydb5;
+
+create table board(
+num int not null auto_increment primary key,
+writer varchar(30) not null,
+subject varchar(50) not null,
+content text not null,
+pw varchar(20) not null,
+wdate date,
+readcount int unsigned default 0,
+ip varchar(20)
+);
++-----------+------------------+------+-----+---------+----------------+
+| Field     | Type             | Null | Key | Default | Extra          |
++-----------+------------------+------+-----+---------+----------------+
+| num       | int(11)          | NO   | PRI | NULL    | auto_increment |
+| writer    | varchar(30)      | NO   |     | NULL    |                |
+| subject   | varchar(50)      | NO   |     | NULL    |                |
+| content   | text             | NO   |     | NULL    |                |
+| pw        | varchar(20)      | NO   |     | NULL    |                |
+| wdate     | date             | YES  |     | NULL    |                |
+| readcount | int(10) unsigned | YES  |     | 0       |                |
+| ip        | varchar(20)      | YES  |     | NULL    |                |
++-----------+------------------+------+-----+---------+----------------+
+
+==========================================
+WEB-INF/lib/*.jar 라이브러리 넣는다
+web.xml 작업
+WEB-INF/board-servlet.xml
+
+src/board.model.BoardDto.java
+
+src/board.sql.board.xml
+
+src/board.controller.BoardController.java
+
+WEB-INF/board/writeForm.jsp
+
+WEB-INF/views/board 복사
+
+board-servlet.xml 수정

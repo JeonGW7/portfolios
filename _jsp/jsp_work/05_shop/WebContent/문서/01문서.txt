@@ -1,0 +1,110 @@
+01문서.txt
+shop
+간단한 쇼핑몰 사이트 구축
+1. 기능정의
+     -로그인 / 로그아웃
+     -상품목록
+     -상품상세보기
+     -장바구니에 상품담기
+     -상품구매(주문하기)
+     -구매목록
+     
+DB작업
+shopdb 생성,사용
+
+context.xml 변경
+
+table실수시
+drop table shop_info;
+
+create table shop_info(
+pro_no int(5) not null auto_increment, #상품번호(일련번호)
+code varchar(20) not null unique, #상품코드
+name varchar(30) not null,  #상품이름
+price int(5) not null,  #상품가격
+stock int(5),  #상품수량,보유수량
+detail varchar(4000), #설명
+comp varchar(30),  #제조회사
+regdate datetime,  #상품등록날짜
+image varchar(30),  #상품이미지 
+primary key(pro_no)
+); 
+
+예시
+insert into shop_info values(0,'code','name',가격,수량,'설명','회사명','날짜','aa.jpg');
+
+실습
+insert into shop_info values(0,'상품코드1','로체2-초콜렛',288000,5,
+'화강암이 많은 한국지형 특성에 알맞게 최적화된 캠프라인만의 특수고무로 제작된 탁월한 접지력을 자랑하는 아웃솔입니다.','캠프라인','2015-10-26','1011804_560x560.jpg');
+
+
+insert into shop_info values(0,'상품코드2','써니사이드2 - 옐로우', 134400,
+5,'접지력, 경량화를 개선한 신규 솔 CDR 시스템을 적용한 화려한 스타일의 고어텍스 경등산화','캠프라인',NOW(), '1011703_560x560.jpg');
+
+insert into shop_info values(0,'7AB7621','글래스캣(여성)',139000,100,'가볍고 변안한..','NEPA','2015-01-06','7AB7621_900_01.jpg');
+
+insert into shop_info values(0,'7AG7603','엣지(공용)',188300,100,'등산,드래킹 운동화','NEPA','2014-03-24','7AG7603_200_01.jpg');
+
+insert into shop_info values(0,'7AB7616','패러트로우',179000,100,'안전감이 뛰어난..','NEPA','2014-06-18','7AB7616_500_01.jpg');
+
+05_shop
+  src/shopdb.ProductDTO.java(모델빈)
+  src/shopdb.ProductDAO.java(비지니스로직)
+  WebContent
+    shop폴더
+      style.css 복사
+      script.js 복사
+      top.jsp
+      bottom.jsp
+      loginForm.jsp
+      loginPro.jsp
+      logOut.jsp
+      
+      Index.jsp
+      
+      productList.jsp 상품 목록보기
+             상세보기
+	   DAO작업
+       productDetail.jsp      
+      cartList.jsp
+      orderList.jsp
+----------------------------------------------
+ 주문 테이블 shop_order
+----------------------------------------------
+use shopdb;
+drop table shop_order;
+
+create table shop_order(
+ordno int(5) not null auto_increment, #주문번호
+pro_no int(5) not null, #상품일련번호
+quantity varchar(20) not null, #상품 주문 수량
+orddate datetime, #주문날짜
+state varchar(20),  #상태
+userid varchar(30),  #회원ID
+primary key(ordno)  
+);
+
+state : 상태
+1.접수중
+2.접수
+3.입금확인
+4.배송준비
+5.배송중
+6.배송완료
+-------------------------------------------------
+src/shopdb.OrderDTO.java (모델빈)
+src/shopdb.CartMgr.java (장바구니)
+
+ProductDAO에 getProduct(int pro_no)추가
+-------------------------------------------------
+productDetail.jsp ==> cartPro.jsp ==> cartList.jsp 주문
+
+cartList.jsp=>
+OrderDAO.java =>
+orderPro.jsp=>orderList.jsp 
+
+
+
+
+-------------------------------------------------
+

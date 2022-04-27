@@ -1,0 +1,40 @@
+01_template_문서.txt
+
+java에서 Layout
+jsp에서는 template : 동적 배치
+Spring에서는 tiles : 동적 배치  
+
+실습1
+ch05_template
+  ex01폴더
+    top.jsp
+    left.jsp
+    bottom.jsp
+    content.jsp
+    template.jsp
+    main.jsp
+    
+ch05_template
+  ex02폴더
+  top.jsp
+  bottom.jsp
+  dc.jsp : 가운데 배치
+  dcleft.jsp : 왼쪽 배치
+  pmp.jsp : 가운데 배치
+  pmpleft.jsp : 왼쪽 배치
+  pageController.jsp
+  template.jsp : 동적 배치
+  main.jsp
+  
+ch05_template
+  ex03폴더
+  top.jsp
+  left.jsp
+  bottom.jsp
+  bestItem.jsp  베스트 상품 
+  newItem.jsp	신상품
+  template.jsp	실행
+ 추가
+  loginForm.jsp
+  memberForm.jsp
+  

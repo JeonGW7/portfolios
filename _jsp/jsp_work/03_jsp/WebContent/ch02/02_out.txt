@@ -1,0 +1,11 @@
+02_out.txt
+out 객체: JspWriter의 객체 이다 
+
+메서드 들
+1.isAutoflush() : 출력 버퍼가 가득 찼을때 자동으로 밀어 낼 것인지 여부를 지정한다(true/false)  
+2.getBufferSize() : 출력 버퍼 사이즈 구하기(디폴트 8bk)
+3.getRemaining() : 남아있는 출력 버퍼 size를 구한다
+4.clearBuffer() : 출력 버퍼를 비운다
+5.out.println() : String출력
+6.flush() : 출력버퍼 내용을 밀어낸다 
+7.close() : 출력버퍼 내용을 밀어내고 닫는다

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test05_event.html</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+	  $('#btn1').on('click',function(event){
+		  alert("#btn1");
+		  console.log("홍길동");
+	  });
+	  $('#btn2').on('click',function(event){
+		  alert("#btn2");
+		  $(this).css('color','#f00');
+		  $(this).css('background-color','yellow');
+	  });
+  });
+  </script>
+</head>
+<body>
+  <button id="btn1">Click1</button>
+  <button id="btn2">Click2</button>
+</body>
+</html>

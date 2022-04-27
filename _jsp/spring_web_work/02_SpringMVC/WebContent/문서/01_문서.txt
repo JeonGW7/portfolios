@@ -1,0 +1,12 @@
+01_문서.txt
+
+02_SpringMVC
+web.xml 추가
+
+*WEB_INF/lib/*.jar 추가
+
+*web.xml에 컨트롤러 추가
+
+src/com.test.TestController.java 작성
+
+WebContent/test/bbb.jsp 작성

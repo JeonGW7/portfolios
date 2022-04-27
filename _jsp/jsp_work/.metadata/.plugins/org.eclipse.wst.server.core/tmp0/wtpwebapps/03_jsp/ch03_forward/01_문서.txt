@@ -1,0 +1,45 @@
+01_문서.txt
+
+forward액션 태그는 
+JSP에서 조건에 따라 분기한다 
+
+형식1)
+  <jsp:forward page="로컬url"/>
+형식2)
+  <jsp:forward page="로컬url,bb.jsp">
+    <jsp:param name="id" value="park"/>
+    <jsp:param name="name" value="박지성"/>
+    <jsp:param name="email" value="park@naver.com"/>
+  </jsp:forward> 
+  
+  bb.jsp에서
+  request.getParameter("id");
+  request.getParameter("name");
+  request.getParameter("email");
+  
+  ------------------------------------
+  ※<jsp:forward>액션은 JSP컨테이너에서 http요청에 따른 jsp페이지로 보내는 것이다 (제어권을 넘긴다)
+  http 요청은 처음 만들어진 TCP하나만 있는 것이다 
+  
+  그렇기 때문에 <jsp:forward>액션은 처음 보낸 데이터를 새로 이동한 jsp페이지에서 사용 가능하다 
+  
+  실습:01_forward 폴더
+  	 forwardForm.jsp
+  	 forwardPro.jsp
+  	 forwardPro2.jsp
+  	 
+  실습:02_forward 폴더
+  age.html
+  age.jsp
+  aa.jsp
+  bb.jsp
+  cc.jsp
+  dd.jsp
+  실습:03_forward 폴더
+  bloodType.html
+  bloodType.jsp
+  A.jsp
+  B.jsp
+  AB.jsp
+  O.jsp
+  

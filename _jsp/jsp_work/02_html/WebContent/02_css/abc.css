@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+.red{
+	color:red;
+	font-family: 궁서체 바탕체 바탕;
+	text-align: center;
+	font-size: 15pt;
+}
+
+.green{
+	color:green;
+	font-family: 궁서체;
+	text-align: right;
+	font-size: 15pt;
+}
+
+.blue{
+	color: blue;
+	font-family: 바탕체;
+	text-align: left;
+	font-size: 15pt;
+}
+a:link{/*하이퍼링크*/
+	color: blue;
+	text-decoration: underline;
+	font-size: 12pt;
+}
+a:visited{/*방문후*/
+	color:red;
+	text-decoration: none;
+	font-size: 12pt;
+}
+
+a:active{/*방문중*/
+	color: green;
+	text-decoration: none;
+	font-size: 12pt;
+}
+a:hover{/*마우스커서가 올려졌을때*/
+	color: cyan;
+	text-decoration: underline;
+	font-size: 12pt;
+	cursor:pointer; /*손모양*/
+}

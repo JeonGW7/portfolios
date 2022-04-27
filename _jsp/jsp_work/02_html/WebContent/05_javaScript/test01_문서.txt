@@ -1,0 +1,22 @@
+test01_문서.txt
+이벤트 : 마우스,키보드로 입력할 때 발생하는 신호
+ 이벤트 핸들러 : 이벤트로 발생한 명령 = 핸들러 = 함수
+ 			이벤트 앞에 on붙인다
+ 			예: onclick="insa()"
+ 			
+ 이벤트 핸들러 종류 
+ onClick : 마우스를 클릭 했을 때
+ onDbClick : 마우스를 더블 클릭했을때 
+ onMouseOver : 마우스 커서가 입력필드안에 놓여있을때 
+ onMouseOut : 마우스 커서가 입력필드 밖으로 나갔을때
+ onMouseDown : 마우스 버튼을 눌렀을 때
+ onMouseUp : 마우스 버튼을 눌렀다가 놓았을 때
+ onMouseMove : 마우스를 움직였을 때 
+ onLoad : html페이지 시작시에 실행 된다
+ onUnload : html페이지 끝날때 실행 
+ onChange : 갑이 변경되었을 때 이벤트 발생 예)select태그 
+ onBlur : 포커스를 잃었을때 이벤트 발생(ID중복 체크) 
+ onFocus : 포커스를 얻었을때 이벤트 발생 
+ onKeyup : 사용자가 키보드를 눌렀다가 놓았을때 
+ onkeyPressed : 사용자가 키보드를 눌렀을때 
+ onKeyDown : 사용자가 키보드를 눌렀을때 

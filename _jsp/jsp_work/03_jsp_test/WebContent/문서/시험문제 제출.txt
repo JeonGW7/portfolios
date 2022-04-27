@@ -1,0 +1,13 @@
+워드패드로  .rtf 
+폰트8, 단락없애기 
+전근우_서버프로그램구현_포트폴리오.rtf  
+
+create database testdb3;
+
+use testdb3;
+
+create table member3(
+id varchar(20) primary key,
+pw varchar(20) not null,
+name varchar(30) not null
+);

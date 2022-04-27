@@ -1,0 +1,27 @@
+02_문서.txt
+
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| id      | varchar(20) | NO   | PRI | NULL    |       |
+| pw      | varchar(15) | NO   |     | NULL    |       |
+| name    | varchar(30) | NO   |     | NULL    |       |
+| email   | varchar(30) | NO   |     | NULL    |       |
+| tel     | varchar(20) | NO   |     | NULL    |       |
+| zipcode | varchar(10) | NO   |     | NULL    |       |
+| addr    | varchar(30) | NO   |     | NULL    |       |
+| addr2   | varchar(20) | NO   |     | NULL    |       |
+| regdate | date        | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+
+member.xml
+MemberController.java
+*.jsp
+views/member/insertForm.jsp
+views/member/idCheck.jsp : ID중복체크
+views/member/loginForm.jsp
+views/member/loginSuccess.jsp
+
+views/member/logOut.jsp
+views/member/updateForm.jsp
+views/member/memberDeleteForm.jsp 

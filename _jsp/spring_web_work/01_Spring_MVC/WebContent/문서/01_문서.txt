@@ -1,0 +1,16 @@
+01_문서.txt
+
+*WEB-INF/web.xml에 컨트롤러 등록 (front) 
+
+*WEB-INF/springapp-servlet.xml (컨트롤러=action 와 view작업)
+
+*컨트롤러 작성(=Action)클래스 작성
+
+src/com.spring.HelloController.java
+
+=======================================
+
+뷰 작업(view=jsp)
+WebContent/test/hello.jsp
+
+실행

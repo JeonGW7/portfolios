@@ -1,0 +1,22 @@
+package comm.util;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.Assert.*;
+
+
+class CommandUtilTest {
+	/*
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+	*/
+	@Test
+	public void test() {
+		CommandUtil commandUtil=new CommandUtil(); //객체생성
+		assertEquals(100,commandUtil.add(70, 30));
+		//           결과
+	}
+}

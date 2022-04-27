@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test04_selector.html</title>
+  <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+	  console.log("이름:홍길동");
+	  console.log(10+20+30);
+	  console.log("나이:"+27);
+	  //
+	  $("span").css('color','#f00');
+	  $('#a').css('border','1px solid #f00');
+	  $('#b').css('border','1px solid #0f0');
+	  //
+	  $('[title="classB"]').css('border','1px solid #00f');
+	  $('[title="classB"]').css('background','yellow');
+	  $('#a').css('background','ivory');
+	  //
+	  $('body').find('span').css('color','blue');
+	  $('body').find('p').css('background','cyan');
+	  $('body').find('span').css('background','pink');
+  });//jQuery-end
+  </script>
+</head>
+<body>
+  <div id="a">
+    <div id="b">
+      <p title="classB">p1</p>
+      <span>span1</span>
+    </div>
+    <div id="c" class="cclass">
+      <p>p2</p>
+      <span>span2</span>
+    </div>
+  </div>
+</body>
+</html>

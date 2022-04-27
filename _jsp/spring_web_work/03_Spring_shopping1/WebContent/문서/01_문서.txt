@@ -1,0 +1,57 @@
+새 프로젝트 : Dynamic Web
+프로젝트 이름 : 03_Spring_shopping1
+web.xml 추가
+
+*WEB-INF/lib/*.jar 라이브러리 넣는다
+
+*web.xml에 프론트 컨트롤러 등록
+
+WEB-INF/shopping1-servlet.xml (back-end, controller 등록)
+
+===================================
+DB작업
+===================================
+create database springdb;
+use springdb;
+create table item(
+item_id int(5) auto_increment primary key,
+item_name varchar(100),
+price int(6),
+description varchar(100),
+picture_url varchar(100)
+);
+
+데이터 입력
+d:\_dd\item.csv 복사
+
+delete from item;
+load data local infile 'd:\\_dd\\item.csv'
+into table item
+fields terminated by ','
+lines terminated by '\r\n';
+
+select * from item;
+
+===================================
+src/logic.ItemDTO.java : 모델빈
+src/dao.ItemDao.java 인터페이스
+dao.ItemDaoImpl.java 구현클래스
+logic.ItemCatalog.java 인터페이스 (미들웨어)
+logic.ItemCatalogImpl.java 구현 클래스
+
+logic.Shop.java 인터페이스 (미들웨어)
+logic.ShopImpl.java 구현 클래스
+
+src/controller.IndexController.java  
+========> Action(front컨트롤러와 DAO 사이에서 작업 하는것)
+
+■처리순서
+1. 클라이언트 요청
+2. 프론트컨트롤러 (org.springframework.web.servlet.DispatcherServlet)
+  /index.html --> IndexController.java --> Shop.java -->ItemCatalog.java -->
+  ItemDao
+
+============================
+WEB-INF/jsp/index.jsp
+
+WebContent/css/shopping1.css

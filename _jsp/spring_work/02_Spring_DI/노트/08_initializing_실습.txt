@@ -1,0 +1,26 @@
+08_initializing_실습.txt
+
+빈 라이프 사이클 실습
+
+1. CartService 클래스 작성
+   InitializingBean, DisoposableBean 인터페이스 상속 받아 구현
+   -초기화 메서드 구현  : loadItems()
+   -소멸 메서드 구현  : storeItems()
+   
+2. cart.xml 작성
+-CartService 타입의 cart빈 등록
+<bean>태그의 init-method속성에 loadItems 설정
+<bean>태그의 destroy-method속성에 storeItems 설정
+
+3. CartClient.java 작성
+
+------------------------------------------------------
+실습
+
+1. CartService 클래스 작성
+src/com.spring.service.order.CartService.java
+
+2. cart.xml 작성
+
+3. src/com.spring.client.CartClient.java 작성
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test09_select.html</title>
+  <script type="text/javascript">
+  function ss(){
+	  if(document.myForm.job.options[0].selected){
+		  alert("직업을 선택하세요");
+	  }else{
+		  m=document.myForm.job.options.selectedIndex; //인덱스 얻기
+		  t=document.myForm.job.options[m].text;
+		  v=document.myForm.job.options[m].value;
+		  alert("index:"+m+"\ntext:"+t+"\nvalue:"+v);
+	  }
+  }//ss-end
+  function add(){
+	  t=document.myForm.t1.value;
+	  v=document.myForm.t1.value;
+	  
+	  document.myForm.job.options[document.myForm.job.options.length]= new Option(t,v);//마지막 인덱스에 (text,value) 추가 하겠다
+	  document.myForm.t1.value=''; //입력내용 지움 
+  }
+  function del(){
+	  m=document.myForm.job.options.selectedIndex;//인덱스 얻기
+	  if(m != 0){ //선택 했으면
+		  document.myForm.job.options[m]=null;
+	  }
+  }
+  </script>
+</head>
+<body>
+  <h2>직업을 선택 하시오</h2>
+  <form name="myForm">
+    <select name="job">
+      <option selected>직업을 선택 하시오</option>
+      <option value="student">학생</option>
+      <option value="교수">교수</option>
+      <option value="회사원">회사원</option>
+    </select>
+    <p>
+    <input type="button" value="선택" onClick="ss()">
+    <input type="button" value="삭제" onClick="del()">
+    <p>
+    <input type="text" name="t1" size="30">
+    <input type="button" value="추가" onClick="add()">
+    <br>
+  </form>
+</body>
+</html>

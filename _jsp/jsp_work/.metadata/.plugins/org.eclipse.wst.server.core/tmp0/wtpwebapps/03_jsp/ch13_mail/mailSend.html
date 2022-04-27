@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mailSend.html</title>
+</head>
+<body>
+<h2>메일보내기</h2>
+<form method="post" action="mailSend.jsp">
+  <table border="1">
+    <tr>
+      <td>보내는 사람</td>
+      <td><input type="text" name="from" size="50"></td>
+    </tr>
+    <tr>
+      <td>받는사람</td>
+      <td><input type="text" name="to" size="50" value="pparkmj777@nate.com"></td>
+    </tr>
+    <tr>
+      <td>제목</td>
+      <td><input type="text" name="subject" size="50"></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <textarea name="content" rows="10" cols="50"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="메일보내기">
+        <input type="reset" value="취소">
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

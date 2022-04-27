@@ -1,0 +1,61 @@
+
+■ WEB-INF/lib/*.jar 라이브러리 넣기
+
+■ web.xml에 컨트롤러 등록 
+
+1. CharacterEncodingFilter 클라스를 사용하면 
+      폼 입력 화면에 한글 사용할 수 있다 
+2. ApplicationContext.xml 사용가능 하게 
+   listener태그에 설정
+3. 컨트롤러 설정
+
+■ WEB-INF/applicationContext.xml 어제꺼 사용
+
+■ WEB-INF/shopping3-servlet.xml (컨트롤러,뷰)
+
+=========================================
+DB작업
+=========================================
+use springdb;
+
+create table user_account(
+user_id varchar(30) primary key,
+user_name varchar(30),
+password varchar(20),
+postcode varchar(8),
+address varchar(70),
+email varchar(50),
+job varchar(30),
+birthday date
+);
+=========================================
+데이터 입력
+d:\_dd\user.csv 복사
+
+delete from item;
+load data local infile 'd:\\_dd\\user.csv'
+into table user_account
+fields terminated by ','
+lines terminated by '\r\n';
+select * from user_account;
+=========================================
+src/msg.properties 작성
+src/logic.UserDTO.java 작성
+src/dao.UserDao.java 작성
+src/dao.UserDaoImpl.java 작성
+src/logic.UserCatalog.java 작성
+src/logic.UserCatalogImpl.java 작성
+src/logic.Shop.java 인터페이스
+src/logic.ShopImpl.java
+ 
+입력 데이터 유효성 체크
+src/utils.LoginValidator.java
+
+src/controller.LoginFormController.java (=Action)
+
+웹작업
+WEB-INF/jsp/header.jsp
+WEB-INF/jsp/login.jsp
+WEB-INF/jsp/loginSuccess.jsp
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mailUpload.html</title>
+</head>
+<body>
+  <h2>메일보내기,첨부파일</h2>
+  <form method="post" action="mailUpload.jsp" encType="multipart/form-data">
+    <table>
+  	  <tr>
+  	    <td>보내는사람</td>
+  	    <td><input type="text" name="from" size="40"></td>
+  	  </tr>
+  	  <tr>
+  	    <td>받는사람</td>
+  	    <td><input type="text" name="to" size="40" value="pparkmj777@nate.com"></td>
+  	  </tr>
+  	  <tr>
+  	    <td>제목</td>
+  	    <td><input type="text" name="subject" size="40"></td>
+  	  </tr>
+  	  <tr>
+  	    <td colspan="2">
+  	      <textarea name="content" rows="10" cols="40"></textarea>
+  	    </td>
+  	  </tr>
+  	  <tr>
+  	    <td>첨부파일</td>
+  	    <td><input type="file" name="f1"></td>
+  	  </tr>
+  	  <tr>
+  	    <td colspan="2" align="center">
+  	      <input type="submit" value="메일보내기">
+  	      <input type="reset" value="취소">
+  	    </td>
+  	  </tr>
+    </table>
+  </form>
+</body>
+</html>

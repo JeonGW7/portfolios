@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test11_confirm.html</title>
+</head>
+<body>
+  <!-- 
+  confirm():내장 함수(확인,취소)
+   -->
+   <script type="text/javascript">
+     var m;//변수
+     m=confirm("KBS7 드라마 볼까요?");
+     if(m==true){
+    	 location.replace("https://www.kbs.co.kr");//확인버튼 눌렀을 때
+     }else{
+    	 location.replace("https://www.daum.net");//취소버튼 눌렀을 때 
+     }
+   </script>
+</body>
+</html>

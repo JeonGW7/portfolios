@@ -1,0 +1,38 @@
+01_문서.txt
+
+DB작업
+MySql
+
+create database stsdb2;
+
+use stsdb2;
+
+create table board(
+bId int(4) not null primary key auto_increment,
+bName varchar(30) not null,
+bTitle varchar(50) not null,
+bContent text not null,
+bDate datetime,
+bHit int(4) default 0, #조회수
+bGroup int(4), #글 그룹
+bStep int(4), #글 순서
+bIndent int(4) #답글 들여쓰기
+);
+================================
+
+새프로젝트
+spring Legacy project
+test03mysql
+co.kr.test03mysql
+
+co.kr.test03mysql/mybatis/*.xml
+
+root-context.xml 사용하지 않고
+servlet-context.xml 를 사용
+
+board.xml
+BoardController.java 
+views/board/list.jsp
+views/board/writeForm.jsp
+views/board/content.jsp
+views/board/editForm.jsp

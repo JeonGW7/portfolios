@@ -1,0 +1,38 @@
+db.txt
+
+use ch20;
+drop table board;
+
+create table board(
+num int not null primary key auto_increment, #일련번호
+writer varchar(30) not null, #작성자
+subject varchar(50) not null, #글제목
+content text not null, #글내용
+pw varchar(10) not null, #암호
+regdate datetime, #날짜
+readcount int default 0, #조회수
+ref int not null, #글 그룹
+re_step int not null, #글 순서
+re_level int not null, #답글 깊이,들여쓰기
+ip varchar(20) 
+);
+
+==========================
+05_mem_board
+META-INF/context.xml
+
+back-end
+src/boardmysql.BoardDTO.java
+src/boardmysql.BoardDAO.java
+
+front-end
+WebContent
+  boardmysql폴더
+    writeForm.jsp  글쓰기/답글쓰기
+    writePro.jsp
+    list.jsp
+    content.jsp
+    updateForm.jsp
+    updatePro.jsp
+    deleteForm.jsp
+    deletePro.jsp

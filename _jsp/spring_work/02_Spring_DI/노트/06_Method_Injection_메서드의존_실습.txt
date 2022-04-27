@@ -1,0 +1,33 @@
+06_Method_Injection_메서드의존_실습.txt
+
+Method Injection(메서드 의존)
+1. Seller 추상 클래스 작성
+	-public abstract Computer getComputer() 추상 메서드
+	
+2. ContentsReplacer 클래스 작성
+	-implements MethodReplacer 인터페이스를 상속 받아서
+	
+3. seller.xml 작성
+	-Computer 타입의 pc3빈 등록
+	-ContentsReplacer 타입의 contentsReplacer 빈 등록
+	-Computer 타입의 pc4빈 등록 (pc3을 상속받아서)
+	
+	<replaced-method>태그에 
+	 replacer="contentsReplacer"
+	 getContent메서드 대신에 contentsReplacer를 실행 
+	 
+	-Seller 타입의 seller빈 등록
+	 <lookup-method>로 pc3빈의 getComputer 설정 
+	 
+4. SellerClient.java 
+
+-------------------------------------------------------
+1.Seller 추상 클래스 작성
+src/com.spring.model.product.Seller.java
+
+2. src/com.spring.model.ContentsReplacer.java 클래스 작성
+  -implements MethodReplacer 인터페이스를 상속받아서
+
+3. seller.xml작성
+
+4. src/com.spring..SellerClient.java

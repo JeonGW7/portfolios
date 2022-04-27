@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test19_table.html</title>
+<!-- rowspan="" -->
+</head>
+<body>
+  <table border="1" width="60%">
+    <caption>성적표</caption>
+    <tr>
+      <td>이름</td>
+      <td>국어</td>
+      <td>영어</td>
+      <td>비고</td>
+    </tr>
+    <tr>
+      <td>김연아</td>
+      <td>99</td>
+      <td>88</td>
+      <td rowspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>아이유</td>
+      <td>99</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>박은빈</td>
+      <td>100</td>
+      <td>100</td>
+    </tr>
+  </table>
+</body>
+</html>

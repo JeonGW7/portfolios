@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test06_addr.html</title>
+  <script type="text/javascript">
+    function addrCopy(){
+    	document.getElementById("name2").value=document.getElementById("name").value;
+    	document.getElementById("tel2").value=document.getElementById("tel").value;
+    	document.getElementById("addr2").value=document.getElementById("addr").value;
+    	document.getElementById("addrDetail2").value=document.getElementById("addrDetail").value;
+    }
+  </script> 
+</head>
+<body>
+  <fieldset>
+    <legend>주문자 정보</legend>
+    <ol>
+      <li>이름:<input type="text" name="name" id="name" size="40"> <!-- li는 자동 줄바꿈 -->
+      <li>전화:<input type="text" name="tel" id="tel" size="40">
+      <li>주소:<input type="text" name="addr" id="addr" size="40">
+      <li>상세주소:<input type="text" name="addrDetail" id="addrDetail" size="40">
+    </ol>
+  </fieldset>
+  <p>
+  <input type="button" value="위의 정보와 같으면 클릭" onClick="addrCopy()">
+  <fieldset>
+    <legend>배송지 정보</legend>
+    <ol>
+     <li>이름:<input type="text" name="name2" id="name2" size="40">
+     <li>전화:<input type="text" name="tel2" id="tel2" size="40">
+     <li>주소:<input type="text" name="addr2" id="addr2" size="40">
+     <li>상세주소:<input type="text" name="addrDetail2" id="addrDetail2" size="40">  
+    </ol>
+  </fieldset>
+</body>
+</html>

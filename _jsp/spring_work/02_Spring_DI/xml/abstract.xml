@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+<!-- pc1 빈 등록, 객체생성 -->
+<bean id="pc1" class="com.spring.model.product.Computer">
+  <constructor-arg value="PC22"/>
+  <property name="cpu" value="인터셀러론1"/>
+  <property name="memory" value="2G"/>
+  <property name="disk" value="1tb"/>
+</bean>
+<!-- note1빈등록, pc1 상속받아서 -->
+<bean id="note1" parent="pc1" class="com.spring.model.product.Notebook">
+  <property name="battery" value="최신형"/> <!-- setter작업 -->
+</bean>
+
+<!-- pc1상속받아서 pc2등록 -->
+<bean id="pc2" parent="pc1">
+  <property name="memory" value="200G"/>
+</bean>
+
+<!-- property 추상화 -->
+<bean id="baseSpec" abstract="true">
+  <property name="cpu" value="인텔 셀러론77"/>
+  <property name="memory" value="8G"/>
+  <property name="disk" value="100G"/>
+</bean>
+
+<!-- baseSpec 상속받아서 note2빈 등록-->
+<bean id="note2" parent="baseSpec" class="com.spring.model.product.Notebook">
+  <constructor-arg value="NB-2"/>
+  <property name="battery" value="구형"/>
+</bean>
+</beans>

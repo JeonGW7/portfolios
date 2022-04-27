@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>test04_formchecker_2.html</title>
+  <style type="text/css">
+  table{
+  margin: auto;
+  border: 1px solid black;
+  }
+  </style>
+  <script type="text/javascript">
+  function check(form){
+	  if(form.name.value==''){
+		  alert("이름을 입력하세요");
+		  form.name.focus();
+		  return false;
+	  }
+	  if(form.id.value==''){
+		  alert("ID를 입력하세요");
+		  form.id.focus();
+		  return false;
+	  }
+	  if(form.pw.value==''){
+		  alert("pw를 입력하세요");
+		  form.pw.focus();
+		  return false;
+	  }
+	  if(form.email.value==''){
+		  alert("email을 입력하세요");
+		  form.email.focus();
+		  return false;
+	  }
+	  alert("데이터 입력 체크 완성");
+  }
+  </script>
+</head>
+<body>
+  <form name="myForm" action="" onSubmit="return check(this)">
+    <table>
+       <tr>
+	      <td>이름</td>
+	      <td><input type="text" name="name" id="name" size="20"></td>
+	    </tr>
+	    <tr>
+	      <td>ID</td>
+	      <td><input type="text" name="id" id="id" size="20"></td>
+	    </tr>
+	    <tr>
+	      <td>암호</td>
+	      <td><input type="password" name="pw" id="pw" size="20"></td>
+	    </tr>
+        <tr>
+	      <td>이메일</td>
+	      <td><input type="text" name="email" id="email" size="30"></td>
+	    </tr>
+	    <tr>
+	      <td colspan="2" align="center"> 
+	        <input type="submit" value="전송">
+	        <input type="reset" value="취소">
+	      </td>
+	    </tr>
+    </table>
+  </form>
+</body>
+</html>
