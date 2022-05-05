@@ -1,0 +1,1 @@
+"https://raw.githubusercontent.com/datascienceschool/docker_rpython/master/data/titanic.csv"
