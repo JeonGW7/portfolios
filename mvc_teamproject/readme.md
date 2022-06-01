@@ -51,6 +51,7 @@
 
 7. 강의로 이동
 ![강의목록_연결](https://user-images.githubusercontent.com/86759846/171402063-2cfaafb0-914f-40ca-bfb4-9a1bf6985590.PNG)
+
 8. 공지사항_리스트
 ![공지사항_리스트](https://user-images.githubusercontent.com/86759846/171401832-e7887580-05e4-44bb-babd-dd853b9d009f.PNG)
 </details>
