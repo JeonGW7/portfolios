@@ -36,24 +36,31 @@
 ![홈화면](https://user-images.githubusercontent.com/86759846/171400448-e4418b4f-e3ae-49ee-adde-733dec4c909b.PNG)
 
 2. 회원가입
+    
 ![회원가입](https://user-images.githubusercontent.com/86759846/171400631-66acacea-368b-429f-b43c-508e926b2106.PNG)
 
 3. 로그인
+    
 ![로그인](https://user-images.githubusercontent.com/86759846/171400744-83db5fa1-e2bb-48b3-a11b-1c6e071779a0.PNG)
 
 4. 회원탈퇴
+    
 ![회원탈퇴](https://user-images.githubusercontent.com/86759846/171401270-8c6746cc-c66c-4ba6-bb9c-f77a68cb1fc6.PNG)
 
 5. 회원정보수정
+    
 ![회원정보수정](https://user-images.githubusercontent.com/86759846/171401425-d71eef1c-3094-4c4f-8a9d-d2a89daedb44.PNG)
 
 6. 강의목록
+    
 ![강의목록](https://user-images.githubusercontent.com/86759846/171401681-fe466720-35ec-40e5-914d-812bf90dde7b.PNG)
 
 7. 강의로 이동
+    
 ![강의목록_연결](https://user-images.githubusercontent.com/86759846/171402063-2cfaafb0-914f-40ca-bfb4-9a1bf6985590.PNG)
 
 8. 공지사항_리스트
+    
 ![공지사항_리스트](https://user-images.githubusercontent.com/86759846/171401832-e7887580-05e4-44bb-babd-dd853b9d009f.PNG)
 
 </details>
