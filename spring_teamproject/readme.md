@@ -11,11 +11,11 @@
 - 팀 프로젝트를 통한 의사소통 방법과 팀워크 단련
 
 ## 개발 환경
-> OS: window10
-> 개발 툴: Spring Tool Suite3
-> DB: MySQL5.5
-> Was: Apache Tomcat8.0
-> 개발 언어: Java jdk1.8.0, Servlet/JSP, HTML, CSS, JavaScript,JQuery, Ajax, EL/JSTL, Tiles
+- OS: window10
+- 개발 툴: Spring Tool Suite3
+- DB: MySQL5.5
+- Was: Apache Tomcat8.0
+- 개발 언어: Java jdk1.8.0, Servlet/JSP, HTML, CSS, JavaScript,JQuery, Ajax, EL/JSTL, Tiles
 
 ## 프로젝트 구성
 ![프로젝트 구성](https://user-images.githubusercontent.com/86759846/171405241-b2264777-1fcd-409e-8484-2468bb787179.PNG)
