@@ -32,6 +32,7 @@
     <summary>자세히</summary>
 
 1. 홈 화면 
+    
 ![홈화면](https://user-images.githubusercontent.com/86759846/171400448-e4418b4f-e3ae-49ee-adde-733dec4c909b.PNG)
 
 2. 회원가입
