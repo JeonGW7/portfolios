@@ -42,7 +42,7 @@
 
 2. 분기 별 환자수
 
-![분기 별 환자수](https://user-images.githubusercontent.com/86759846/171412480-385257f8-4e51-4552-815d-0510c6fd847e.PNG)
+![분기 별 환자수](https://user-images.githubusercontent.com/86759846/171414158-8abcfdae-d81a-4334-b9a2-9b46b48258ed.PNG)
 
 3. 주상병 코드별 요양일 수
     
