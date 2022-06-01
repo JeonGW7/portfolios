@@ -11,11 +11,11 @@
 - 팀 프로젝트를 통한 의사소통 방법과 팀워크 단련
 
 ## 개발 환경
-> OS: window10
-> 개발 툴: Eclipse Luna
-> DB: MySQL5.5
-> Was: Apache Tomcat8.0
-> 개발 언어: Java jdk1.8.0, Servlet/JSP, HTML, CSS, JavaScript,JQuery, Ajax
+- OS: window10
+- 개발 툴: Eclipse Luna
+- DB: MySQL5.5
+- Was: Apache Tomcat8.0
+- 개발 언어: Java jdk1.8.0, Servlet/JSP, HTML, CSS, JavaScript,JQuery, Ajax
 
 ## 프로젝트 구성
 ![프로젝트 구성](https://user-images.githubusercontent.com/86759846/171398846-388afdc3-2c74-4288-8794-3701f53ad45d.PNG)
