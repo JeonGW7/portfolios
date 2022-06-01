@@ -11,12 +11,13 @@ Link: <https://github.com/JeonGW7/portfolios/tree/master/mvc_teamproject>
     
 ##### 중고 거래 사이트
 Link: <https://github.com/JeonGW7/portfolios/tree/master/spring_teamproject>
-###### STS 환경에서 Spring을 사용한 중고 거래 사이트를 구현
+###### STS 환경에서 Spring을 사용한 중고 거래 사이트를 제작해본 프로젝트입니다. 
 
 ---
 ##### 호급기 질병에 따른 상관관계 by Matplotlib
 Link: <https://github.com/JeonGW7/portfolios/tree/master/python_teamproject_matplotlib>
-###### 파이썬을 통한 팀 프로젝트는 많은 양의 의료 관련 데이터를 주제를 정해 데이터 정제 후 시각화하여 한눈에 볼 수 있게 시각화하는 프로젝트
+###### 파이썬을 통한 팀 프로젝트는 많은 양의 의료 관련 데이터를 주제를 정해 데이터 정제 후 
+###### 시각화하여 한눈에 볼 수 있게 시각화한 프로젝트입니다.
    
       
          
